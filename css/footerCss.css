@@ -1,0 +1,102 @@
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.copyright{
+    background-color: rgb(35, 35, 35);
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footerSec {
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.sources a{
+    display: block;
+}
+
+
+.imgBank {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    height: 145px;
+    width: 145px;
+}
+
+.imgBank img {
+    /* background-color: #f1f1f1; */
+    border: 1px solid black;
+    padding: 3px;
+    font-size: 30px;
+    text-align: center;
+}
+
+footer a{
+    margin-bottom: 7px;
+    transform: translateX(0px);
+}
+footer p{
+    margin-bottom: 7px;
+}
+
+footer a:hover{
+    /* background-color: rgb(37, 37, 37); */
+}
+
+.col h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #f7d774; /* ذهب خفيف */
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: #f7d774;
+    transform: translateX(-8px);
+    
+}
+
+.team .love {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #ffdbdb;
+}
+
+.imgBank {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* background-color: #111; */
+    padding: 12px;
+    gap: 5px;
+    border-radius: 8px;
+}
+
+.imgBank img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.copyright {
+    background-color: #171717;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #bbbbbb;
+    border-top: 1px solid #333;
+}

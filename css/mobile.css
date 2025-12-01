@@ -1,0 +1,38 @@
+@media (max-width: 600px) {
+    body {
+        background-color: blue;
+    }
+
+    .footerSec {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer{
+        text-align:center;
+    }
+
+    .pc{
+        display: none;
+    }
+    .phone{
+        display: inline;
+    }
+    
+    header {
+        height: 65px;
+    }
+
+    header .logo img {
+        height: 50px;
+    }
+
+    nav .dropDownBlock {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+}

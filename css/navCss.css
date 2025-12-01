@@ -1,0 +1,51 @@
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 3px;
+    background-image: url(https://www.svgrepo.com/show/524617/hamburger-menu.svg);
+    /* filter: brightness(0); */
+    background-size: 103%;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-image: url(https://www.svgrepo.com/show/365893/x-thin.svg);
+    transition: all 0.1s;
+}
+
+input[type="checkbox"] ~ .mobileNav {
+    transition: all 0.2s linear;
+    transform: translateX(700px);
+}
+input[type="checkbox"]:checked ~ .mobileNav {
+    transform: translateX(0);
+    transition: all 0.2s linear;
+}
+
+
+
+
+
+.mobileNav {
+    height: 711px;
+    width: 280px;
+    right: 0;
+    top: 70px;
+    position: fixed;
+    background-color: #0b8037;
+}
+
+.navBlock {
+    font-size: 24px;
+    padding: 15px 25px;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: var(--transition);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+    text-decoration: none;
+}
