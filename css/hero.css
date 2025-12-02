@@ -1,0 +1,170 @@
+/* @media (max-width: 600px) {
+
+    .hero {
+        width: 100%;
+        height: 67vmax;
+        margin-top: -10px;
+        background-size: 205%;
+        background-position-y: 0;
+        background-position-x: -47vw;
+    }
+
+}
+
+@keyframes arrowMove {
+    0% {top: 0px;}
+    50% {top: 20px;}
+    100% {top: 0px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root{
+
+    --horL:30px;
+
+}
+
+.hero {
+    width: 100%;
+    height: 41vmax;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/opera-damanhur.jpg);
+    background-size: 105%;
+    background-position-y: -157px;
+    background-position-x: -43px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.poem {
+    font-size: 240%;
+    text-align: center;
+    padding-right: 159px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0);
+}
+
+.hero img {
+    height: 70px;
+    position: relative;
+    filter: brightness(0) invert(1);
+    animation-name: arrowMove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.imgCont{
+    filter: opacity(0.2);
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+} */
+
+
+
+
+:root {
+    --horL: 30px;
+}
+
+.hero {
+    width: 100%;
+    height: 41vmax;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../imgs/opera-damanhur.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+
+    background-attachment:fixed;
+}
+
+.poem {
+    font-size: 2.3rem;
+    line-height: 1.4;
+    padding: 0 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0);
+}
+
+.hero img {
+    height: 70px;
+    position: relative;
+    filter: brightness(0) invert(1);
+    animation: arrowMove 2s infinite linear;
+}
+
+.imgCont {
+    position: absolute;
+    bottom: 25px;
+    right: 3.5%;
+    transform: translateX(50%);
+    opacity: 0.25;
+}
+
+.heroP1{
+    font-weight: 800;padding-left: calc(0% + 85px);width: 100%;
+}.heroP2{
+    font-weight: 800;padding-left: calc(0% - 85px);width: 100%;
+}
+.hero span{
+    font-size: 16px;position: relative;right: 40%;
+}
+
+@keyframes arrowMove {
+    0% { top: 0px; }
+    50% { top: 13px; }
+    100% { top: 0px; }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: 73vmax;
+        background-size: 250%;
+        background-position: center top;
+    }
+
+    .poem {
+        font-size: 22px;
+        padding: 0 15px;
+    }
+
+    .imgCont {
+        bottom: 15px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .heroP1 {
+        font-weight: auto;
+        padding-left: auto;
+        width: auto;
+        padding-bottom: 15px;
+    }.heroP2{
+        font-weight: auto;padding-left: auto;width: auto;
+    }.hero span{
+        font-size: 16px;position: relative;right: 16%;
+    }
+
+
+}

@@ -26,4 +26,158 @@ a{
 main{
     padding-top: 80px;
     padding-bottom: 800px;
+
+    background-color: #f5f7fa;
+}
+
+
+
+
+
+
+
+
+
+
+/* .frame {
+    position: relative;
+    display: inline-block;
+}
+
+.frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;                    
+    background-image: url("../imgs/Frame1.png");
+    background-size: 100% 100%;   
+    background-repeat: no-repeat;
+    z-index: 1;
+    pointer-events: none;         
+} */
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    main {
+        padding-top: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* خلفية الحيطة البيضاء */
+.white-wall {
+    width: 100%;
+    padding: 80px 0;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/022/466/674/small/black-and-white-atmospheric-concrete-wall-texture-photo.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
+
+/* الشريحة */
+.artifact {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    direction: rtl;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+/* البرواز الخشب */
+.frame {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    min-width: 280px;
+}
+
+.frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 2;
+    position: relative;
+}
+
+.frame::before {
+    content: "";
+    position: absolute;
+    inset: -18px; /* عشان البرواز يكون خارج الصورة بشوية */
+    background-image: url("../imgs/Frame1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* النص */
+.artifact-info {
+    width: 55%;
+}
+
+.artifact-title {
+    font-family: "Reem Kufi", serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.artifact-desc {
+    font-family: "Cairo", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 10px;
+}
+
+.artifact-date {
+    font-family: "Cairo", sans-serif;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+/* 📱 موبايل */
+@media (max-width: 768px) {
+    .artifact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .artifact-info {
+        width: 90%;
+    }
+
+    .frame {
+        width: 80%;
+    }
+
+    .frame::before {
+        inset: -12px;
+    }
 }
