@@ -66,7 +66,7 @@ main{
 
 
 /* الحيطة */
-.white-wall {
+.wall {
     width: 100%;
     padding: 80px 0;
     background-image: var(--bgImg);
@@ -284,3 +284,14 @@ body{
 /* body:has(.opera-damanhur-butt:focus){
     --imgPreview: block;
 } */
+
+
+.wall::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+}
