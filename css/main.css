@@ -13,15 +13,6 @@ a{
     color: inherit;
 }
 
-/* a:hover::after{
-    content: var(--tooltipTEXT);
-    background-color: rgb(37, 37, 37);
-    color: white;
-    position: fixed;
-    border-radius: 20px;
-    padding: 10px;
-} */
-
 /* main */
 main{
     padding-top: 80px;
@@ -29,46 +20,6 @@ main{
 
     background-color: #f5f7fa;
 }
-
-
-
-
-
-
-
-
-
-
-/* .frame {
-    position: relative;
-    display: inline-block;
-}
-
-.frame img {
-    display: block;
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 2;
-}
-
-.frame::after {
-    content: "";
-    position: absolute;
-    inset: 0;                    
-    background-image: url("../imgs/Frame1.png");
-    background-size: 100% 100%;   
-    background-repeat: no-repeat;
-    z-index: 1;
-    pointer-events: none;         
-} */
-
-
-
-
-
-
-
 
 @media (max-width: 600px) {
     main {
@@ -89,13 +40,25 @@ main{
 
 
 
-/* خلفية الحيطة البيضاء */
+
+
+
+
+
+
+
+:root{
+    --bgImg: url('https://w0.peakpx.com/wallpaper/399/938/HD-wallpaper-video-game-garry-s-mod-texture-minimalist-thumbnail.jpg')
+}
+
+
+
+/* الحيطة */
 .white-wall {
     width: 100%;
     padding: 80px 0;
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/022/466/674/small/black-and-white-atmospheric-concrete-wall-texture-photo.jpg");
+    background-image: var(--bgImg);
     background-size: cover;
-    /* background-attachment: fixed; */
     background-position: center;
 }
 
@@ -108,10 +71,15 @@ main{
     align-items: center;
     direction: rtl;
     flex-direction: row;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
-/* البرواز الخشب */
+/* flip */
+.flipArtifact{
+    flex-direction:row-reverse;
+}
+
+/* البرواز */
 .frame {
     position: relative;
     display: inline-block;
@@ -120,17 +88,20 @@ main{
 }
 
 .frame img {
-    width: 100%;
+    width: 92%;
+    margin-right: 4.25%;
+    margin-top: 1%;
     height: auto;
     display: block;
     z-index: 2;
     position: relative;
+    border-radius: 15px;
 }
 
 .frame::before {
     content: "";
     position: absolute;
-    inset: -18px; /* عشان البرواز يكون خارج الصورة بشوية */
+    inset: -18px;
     background-image: url("../imgs/Frame1.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -138,7 +109,7 @@ main{
     pointer-events: none;
 }
 
-/* النص */
+/* الحوارات */
 .artifact-info {
     width: 55%;
 }
@@ -162,7 +133,6 @@ main{
     opacity: 0.7;
 }
 
-/* 📱 موبايل */
 @media (max-width: 768px) {
     .artifact {
         flex-direction: column;
@@ -180,4 +150,90 @@ main{
     .frame::before {
         inset: -12px;
     }
+}
+
+
+.frame {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.frame:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 20px rgba(0,0,0,0.4));
+}
+
+.frame::before {
+    transition: transform 0.4s ease;
+}
+
+.frame:hover::before {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+.date-but {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-but p {
+    display: inline-block;
+}
+
+.date-but button {
+    background-color: #ffef02;
+    border-radius: 15px;
+    padding: 10px 13px;
+    color: #2c2700;
+    border: none;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2),
+        -6px -6px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* لمعة */
+.date-but button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.45),
+        transparent
+    );
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+    pointer-events: none;
+}
+
+.date-but button:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        8px 8px 16px rgba(0, 0, 0, 0.25),
+        -8px -8px 16px rgba(255, 255, 255, 0.15);
+}
+
+.date-but button:hover::before {
+    transform: translateX(100%);
 }
