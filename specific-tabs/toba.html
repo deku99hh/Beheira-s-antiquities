@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسجد الخراشى | جولة في متحف البحيرة</title>
+    
+    
+    <link rel="stylesheet" href="specific.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/elbehera.png">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Reem+Kufi&family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- الهيدر -->
+
+        <!-- المحتوى الرئيسي -->
+        <main class="content">
+            <!-- إطار الصورة الكبير -->
+            <div class="opera-frame">
+                <img src="../imgs/toba.jpeg" class="opera-image">
+            </div>
+
+            <!-- المعلومات التفصيلية -->
+            <h1 class="h11">مسجد التوبة</h1>
+            <section class="details">
+                <!-- <div class="detail-card">
+                    <h2><i class="fas fa-history"></i> التاريخ والنشأة</h2>
+                    <p>تم افتتاح دار أوبرا دمنهور في عام 2019 كأحد المشروعات الثقافية الكبرى في محافظة البحيرة. جاء إنشاؤها لخدمة الحركة الفنية والثقافية في الدلتا، وتقديم عروض فنية متنوعة تليق بتاريخ المحافظة العريق.</p>
+                </div> -->
+
+                <!-- <div class="detail-card">
+                    <h2><i class="fas fa-archway"></i> التصميم المعماري</h2>
+                    <p>يتميز المبنى بتصميم معماري فريد يجمع بين الأصالة والحداثة، حيث تظهر الواجهات الزجاجية الحديثة مع لمسات من الفن الإسلامي في الزخارف والنقوش. تبلغ سعة المسرح الرئيسي حوالي 1000 متفرج.</p>
+                </div> -->
+
+                <div class="detail-card">
+                    <h2> معلومات</h2>
+                    <p>
+
+يقع بشارع عرابى بالقرب من محطة السكة الحديد وقد شيده عمرو بن العاص رضى الله عنة سنة 21 هجريا قبل فتح الإسكندرية ويعد ثاني مسجد بني في أفريقيا بعد مسجد عمرو بن العاص بالقاهرة، وهو تحفة من العمارة الإسلامية وبه عمود من الرخام الخالص من أفضل أنواع الرخام فى العالم, ويكمن سبب تسمية مسجد التوبة بهذا الاسم؛ لكون التائبون يقصدونه للأوبة والتوبة إلى الله ، وللمسجد أيضا دور اجتماعي هام لأهالي المدينة، حيث يوجد به معهد الإعداد الدعاة ودار لتحفيظ القرآن الكريم وفصول تقوية ويقصده المسلمون من كافة أنحاء دمنهور, وقد اشتهر المسجد بدوره السياسي البارز، حيث ظل على مدى التاريخ قبلة للمظاهرات والاحتجاجات ضد الطغاة والظالمين، وكان شاهد عيان
+
+على جميع الاحتجاجات التي قامت بها القوى السياسية قبل وبعد ثورة الخامس والعشرين من يناير، وكان دوما نقطة انطلاق لجميع حشودهم ومسيراتهم الاحتجاجية نظرا لموقعه الفريد فى قلب المدينة وحجمه الكبير الذي يتسع لآلاف المصلين.
+
+
+
+                    </p>
+
+                </div>
+
+<!-- 
+                <div class="quote-box">
+                    <i class="fas fa-quote-right"></i>
+                    <p class="quote">"الفنون ترتفع بالإنسان، وتجعل من المكان تاريخاً"</p>
+                    <p class="quote-author">— وزارة الثقافة المصرية</p>
+                </div> -->
+            </section>
+
+            <!-- زر الرجوع -->
+            <div class="back-section">
+                <a href="../index.html#toba" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> العودة إلى الجولة الرئيسية
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // تأثير التمرير السلس للروابط
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId !== '#') {
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // تأثير عند تحميل الصفحة
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>
