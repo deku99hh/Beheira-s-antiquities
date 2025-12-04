@@ -305,3 +305,33 @@ body{
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .goUpButt button {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.goUpButt {
+    position: sticky;
+    top: 70vw;
+    left: 3vw;
+    border-radius: 50%;
+}
+body{
+    padding-bottom: 3000px  ;
+} */
