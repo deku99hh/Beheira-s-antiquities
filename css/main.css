@@ -16,7 +16,7 @@ a{
 /* main */
 main{
     padding-top: 80px;
-    padding-bottom: 800px;
+    /* padding-bottom: 800px; */
 
     background-color: #f5f7fa;
 }
@@ -284,6 +284,11 @@ body{
 .opera-damanhur-butt{
     background-color: rgba(0, 0, 0, 0);
     border: 0;
+}
+
+.opera-damanhur-butt img {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* body:has(.opera-damanhur-butt:focus){
