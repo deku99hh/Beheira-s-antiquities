@@ -118,15 +118,19 @@
 .imgCont {
     position: absolute;
     bottom: 25px;
-    right: 3.5%;
+    right: 5.5%;
     transform: translateX(50%);
     opacity: 0.25;
 }
 
 .heroP1{
-    font-weight: 800;padding-left: calc(0% + 85px);width: 100%;
+    font-weight: 800;
+    /* padding-left: calc(0% + 85px); */
+    width: 100%;
 }.heroP2{
-    font-weight: 800;padding-left: calc(0% - 85px);width: 100%;
+    font-weight: 800;
+    /* padding-left: calc(0% - 85px); */
+    width: 100%;
 }
 .hero span{
     font-size: 16px;position: relative;right: 40%;
@@ -167,4 +171,14 @@
     }
 
 
+}
+@media (max-width: 405px) {
+    .hero{
+        /* background:no-repeat ; */
+        background-repeat: no-repeat;
+        height: 48vmax;
+    }
+    .hero img {
+        height: 45px;
+    }
 }
