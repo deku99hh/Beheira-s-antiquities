@@ -335,3 +335,49 @@ body{
 body{
     padding-bottom: 3000px  ;
 } */
+
+#me,#khrashikhrashiTheMan {
+    /* display: none; */
+    opacity: 0;
+    width: 0%;
+    border-radius: 20px;
+    position: fixed;
+    top: 31%;
+    right: 42%;
+    z-index: 999;
+}
+
+.animation {
+    animation: me 3s linear;
+}
+
+@keyframes me {
+    0% {
+        width: 22%;
+        /* display: block; */
+        opacity:0;
+    }
+    30% {
+        opacity:1;
+    }
+    60% {
+        opacity:1;
+    }
+    99%{
+        width: 22%;
+    }
+    100% {
+        opacity:0;
+        width: 0%;
+        /* display: none; */
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #me,#khrashikhrashiTheMan {
+        width: 62%;
+        top: 28%;
+        right: 19%;
+    }
+}
