@@ -371,13 +371,35 @@ body{
         width: 0%;
         /* display: none; */
     }
-    
 }
 
 @media (max-width: 600px) {
     #me,#khrashikhrashiTheMan {
-        width: 62%;
+        width: 0%;
         top: 28%;
         right: 19%;
     }
+
+    @keyframes me {
+        0% {
+            width: 62%;
+            /* display: block; */
+            opacity:0;
+        }
+        30% {
+            opacity:1;
+        }
+        60% {
+            opacity:1;
+        }
+        99%{
+            width: 62%;
+        }
+        100% {
+            opacity:0;
+            width: 0%;
+            /* display: none; */
+        }
+    }
+
 }
