@@ -1,0 +1,454 @@
+/* all */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', Arial, sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* constant */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* main */
+main{
+    padding-top: 80px;
+    /* padding-bottom: 800px; */
+
+    background-color: #f5f7fa;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding-top: 70px;
+    }
+
+    .date-but {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .date-but button {
+        margin-top: 20px;
+    }
+
+    .frame img {
+        /* width: 92% !important; */
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root{
+    --bgImg: url('https://w0.peakpx.com/wallpaper/399/938/HD-wallpaper-video-game-garry-s-mod-texture-minimalist-thumbnail.jpg')
+}
+
+
+
+/* الحيطة */
+.wall {
+    /* break-inside: avoid-column; */
+    /* break-inside: avoid; */
+    width: 100%;
+    padding: 80px 0;
+    background-image: var(--bgImg);
+    background-position: center;
+    column-width: 23rem;
+    /* display: grid; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+/* الشريحة */
+.artifact {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+    max-width: 350px;
+    display: block;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.flipArtifact{
+    flex-direction: row; 
+}
+
+/* البرواز */
+.frame {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: unset;
+    margin-bottom: 20px; 
+}
+
+.frame img {
+    width: 100% !important; 
+    margin: 0 auto; 
+    height: auto;
+    display: block;
+    z-index: 2;
+    position: relative;
+    border-radius: 10px; 
+}
+.frame:hover {
+    transform: none; 
+    filter: none;
+}
+.artifact:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.artifact-info {
+    width: 100%;
+}
+
+.artifact-title, .artifact-desc {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.artifact-date {
+    font-family: "Cairo", sans-serif;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .artifact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .artifact-info {
+        width: 90%;
+    }
+
+    .frame {
+        /* width: 80%; */
+    }
+
+    .frame::before {
+        inset: -12px;
+    }
+}
+
+
+.frame {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.frame:hover {
+    /* transform: scale(1.1); */
+    filter: drop-shadow(0 0 20px rgba(0,0,0,0.4));
+}
+
+.frame::before {
+    transition: transform 0.4s ease;
+}
+
+.frame:hover::before {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+.date-but {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.date-but p {
+    display: inline-block;
+}
+
+.date-but button {
+    background-color: #ffef02;
+    border-radius: 15px;
+    padding: 10px 13px;
+    color: #2c2700;
+    border: none;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    /* margin-top: 20px; */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2),
+        -6px -6px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* لمعة */
+.date-but button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.45),
+        transparent
+    );
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+    pointer-events: none;
+}
+
+.date-but button:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        8px 8px 16px rgba(0, 0, 0, 0.25),
+        -8px -8px 16px rgba(255, 255, 255, 0.15);
+}
+
+.date-but button:hover::before {
+    transform: translateX(100%);
+}
+
+
+
+
+
+/* :root{
+    --imgPreviewimg: url(../imgs/opera-damanhur.jpg);
+    --imgPreview:none;
+}
+body{
+    overflow-x: hidden;
+}
+
+.imgPreview {
+    position: fixed;
+    display: var(--imgPreview);
+    top: 17%;
+    text-align: center;
+    right: 8%;
+    width: 80%;
+    height: 80%;
+    background-image: var(--imgPreviewimg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 99;
+} */
+
+.opera-damanhur-butt{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    width: 100%;
+}
+
+.opera-damanhur-butt img {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* body:has(.opera-damanhur-butt:focus){
+    --imgPreview: block;
+} */
+
+
+.wall::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+}
+
+
+@media (max-width: 1024px) {
+    .wall {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding-top: 70px;
+    }
+
+    .date-but {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .date-but button {
+        margin-top: 20px;
+    }
+
+    .frame img {
+        /* width: 100% !important; */
+    }
+
+    .wall {
+        grid-template-columns: 1fr; 
+    }
+    
+    .artifact {
+        width: 85%; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .goUpButt button {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.goUpButt {
+    position: sticky;
+    top: 70vw;
+    left: 3vw;
+    border-radius: 50%;
+}
+body{
+    padding-bottom: 3000px  ;
+} */
+
+#me,#khrashikhrashiTheMan {
+    /* display: none; */
+    opacity: 0;
+    width: 0%;
+    border-radius: 20px;
+    position: fixed;
+    top: 31%;
+    right: 42%;
+    z-index: 999;
+}
+
+.animation {
+    animation: me 3s linear;
+}
+
+@keyframes me {
+    0% {
+        width: 22%;
+        /* display: block; */
+        opacity:0;
+    }
+    30% {
+        opacity:1;
+    }
+    60% {
+        opacity:1;
+    }
+    99%{
+        width: 22%;
+    }
+    100% {
+        opacity:0;
+        width: 0%;
+        /* display: none; */
+    }
+}
+
+@media (max-width: 600px) {
+    #me,#khrashikhrashiTheMan {
+        width: 0%;
+        top: 28%;
+        right: 19%;
+    }
+
+    @keyframes me {
+        0% {
+            width: 62%;
+            /* display: block; */
+            opacity:0;
+        }
+        30% {
+            opacity:1;
+        }
+        60% {
+            opacity:1;
+        }
+        99%{
+            width: 62%;
+        }
+        100% {
+            opacity:0;
+            width: 0%;
+            /* display: none; */
+        }
+    }
+
+}
+
+.arabic .arabicMAIN{
+    display: block;
+}.arabic .englishMAIN{
+    display: none;
+}
+.english .englishMAIN{
+    display: block;
+}.english .arabicMAIN{
+    display: none;
+}
