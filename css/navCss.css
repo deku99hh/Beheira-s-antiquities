@@ -29,6 +29,7 @@ input[type="checkbox"]:checked ~ .mobileNav {
 
 
 .mobileNav {
+    overflow: scroll;
     height: 711px;
     width: 280px;
     right: 0;
