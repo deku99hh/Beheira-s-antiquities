@@ -403,3 +403,14 @@ body{
     }
 
 }
+
+.arabic .arabicMAIN{
+    display: block;
+}.arabic .englishMAIN{
+    display: none;
+}
+.english .englishMAIN{
+    display: block;
+}.english .arabicMAIN{
+    display: none;
+}

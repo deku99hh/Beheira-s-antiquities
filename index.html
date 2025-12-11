@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link rel="icon" type="image/x-icon" href="imgs/elbehera.png">
 
     <title>جولة في متحف البحيرة</title>
@@ -62,11 +65,30 @@
             </div>
         </nav>
 
-        <h2>متحف البحيرة</h2>
+        <div style="display: flex; gap: 20px;align-items: center;">
+            <input type="checkbox" class="theme-toggle pc" id="themeToggle">
+                <!-- <i class="fa-solid fa-gear"></i> -->
+            
+            <div class="pc setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic">اللغة العربية</button>
+                    <button class="english">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+            
+            <h2>متحف البحيرة</h2>
+        </div>
     </header>
 
 
-    <main>
+    <main class="arabicMAIN">
         <section id="hero" class="hero">
             <div class="poem">
                 <p class="heroP1">
@@ -702,6 +724,592 @@
         </section>
 
     </main>
+
+
+                            <main class="englishMAIN" style="background-color: blue !important;">
+                                    <section id="hero" class="hero">
+                                        <div class="poem">
+                                            <p class="heroP1">
+                                                ناجِ البحيرةَ وحدك الآنا واجلسْ بهذا الصخرِ منفردا!
+                                            </p>
+                                            <p class="heroP2">
+                                                قل للبحيرةِ تذكرين وقدْ سكن المساءُ ونحن باللجِّ
+                                            </p>
+                                            <span>--إبراهيم ناجي</span>
+                                        </div>
+                                        <div class="imgCont"> 
+                                            <img src="https://www.svgrepo.com/show/147978/down-black-arrow.svg" alt="دار اوبيرا دمنهور">
+                                        </div>
+                                    </section>
+
+                                    <section id="building" class="wall" style="--bgImg: url('https://img.freepik.com/free-photo/abstract-white-surface-with-clight-pores_1194-7514.jpg?semt=ais_hybrid&w=740&q=80')">
+                                    
+                                        <div class="artifact" id="opera-damanhur">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/opera-damanhur.jpg" alt="Damanhour Opera House">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Damanhour Opera House</h2>
+                                                <p class="artifact-desc">
+                                                    Damanhour Opera is considered one of the most important modern cultural facilities in Beheira Governorate.
+                                                    It was restored and opened to be a center for arts and theatrical performances, featuring an architectural
+                                                    style that combines modernity with the city's heritage spirit.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1930 – Renovated 2010</p>
+                                                    <a href="specific-tabs/opera-damanhur.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="dareh-ebn-el-nafis">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/dareh-ebn-el-nafis.jpg" alt="Ibn al-Nafis Shrine" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Ibn al-Nafis Shrine</h2>
+                                                <p class="artifact-desc">
+                                                The Shrine of Ibn al-Nafis is located in the
+                                                city of Rahmaniya, Beheira Governorate, Egypt, and is attached to a mosque bearing the same
+                                                name. The shrine was discovered in 1988 based
+                                                on a marble plaque indicating the date of construction,
+                                                and it is attributed as the burial place of the physician scholar Ibn al-Nafis.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1879 AD</p>
+                                                    <a href="specific-tabs/dareh-ebn-el-nafis.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="artifact" id="khrashi">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/khrashi.png" alt="Al-Kharashi Mosque" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Al-Kharashi Mosque</h2>
+                                                <p class="artifact-desc">
+                                                    Al-Kharashi Mosque is located in the village of Nakraha,
+                                                    Damanhour city, Beheira Governorate, Egypt. It is one of the oldest mosques in the governorate
+                                                    and houses the shrine of Sidi Abdel-Metaal Al-Kharashi, who was a prominent Sufi figure.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1882 AD</p>
+                                                    <a href="specific-tabs/khrashi.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="baramos">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/baramos.png" alt="Paromeos Monastery" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Paromeos Monastery</h2>
+                                                <p class="artifact-desc">
+                                                The Virgin Mary Baramos Monastery is considered one of the oldest monasteries of the Coptic Orthodox Church. It is located in Wadi El Natrun, about 12 kilometers from the Cairo-Alexandria road.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 375 AD</p>
+                                                    <a href="specific-tabs/baramos.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="toba">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/toba.jpeg" alt="Al-Tawba Mosque" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Al-Tawba Mosque</h2>
+                                                <p class="artifact-desc">
+                                                Al-Tawba Mosque is one of the historic mosques in the city of Damanhour, Beheira Governorate, and is considered the second oldest mosque in the continent of Africa after the Mosque of Amr ibn al-Aas in Cairo.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 642 AD</p>
+                                                    <a href="specific-tabs/toba.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="bawaba-reesh">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/bawaba-reesh.jpg" alt="Abu Al-Rish Gate" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Abu Al-Rish Gate</h2>
+                                                <p class="artifact-desc">
+                                                One of the most prominent historical archaeological landmarks in the city of Rashid. It represented the western entrance to the city and its impregnable fortress, and is famous for its pivotal role in resisting the Fraser expedition.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1508 AD</p>
+                                                    <a href="specific-tabs/bawaba-reesh.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="edfena">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/edfena.jpeg" alt="Edfina Railway Bridge" style="width: 90%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Edfina Railway Bridge</h2>
+                                                <p class="artifact-desc">
+                                                The bridge is an integral part of the irrigation and railway system in Egypt, alongside the historic Edfina Barrage, which dates back to the reign of King Farouk around 1950.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1950 AD</p>
+                                                    <a href="specific-tabs/edfena.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="eyelife">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/eyelife.jpg" alt="Ain Al-Hayat Palace" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Ain Al-Hayat Palace</h2>
+                                                <p class="artifact-desc">
+                                                Khedive Tewfik's palace was named "Ain Al-Hayat" after Princess Ain Al-Hayat, daughter of Prince Ahmed Rifaat Pasha and wife of Sultan Hussein Kamel, who ruled Egypt at the beginning of the last century. She lived there for a period, as did Khedive Tewfik, who used to stay there for limited periods of the year, especially after Abdeen Palace suffered fires, moving his government meetings to Helwan Palace until he died there in 1892 AD.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1914 AD</p>
+                                                    <a href="specific-tabs/eyelife.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="beshara-church">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/beshara-church.jpg" alt="Church of the Annunciation" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Church of the Annunciation</h2>
+                                                <p class="artifact-desc">
+                                                The Church of the Virgin Mary, Lady of the Annunciation for the Franciscan Friars in Damanhour, is one of the oldest Catholic places of worship in Egypt, and it celebrated the 150th anniversary of its founding.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1914 AD</p>
+                                                    <a href="specific-tabs/beshara-church.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="tahona">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/tahona.jpg" alt="Abu Shahin Mill" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Abu Shahin Mill</h2>
+                                                <p class="artifact-desc">
+                                                The builder of this mill is Prince Osman Agha al-Tubji, who held a high position as commander of the artillery in the Ottoman army at the time. He designed it to be part of an integrated architectural complex that also includes the famous Amasyali House.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1808 AD</p>
+                                                    <a href="specific-tabs/tahona.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="der-serian">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/der-serian.jpg" alt="Monastery of the Virgin - Al-Surian" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Monastery of the Virgin - Al-Surian</h2>
+                                                <p class="artifact-desc">
+                                                The Monastery of the Virgin Mary - Al-Surian is the smallest of the four inhabited monasteries in Wadi El Natrun, located west of the Nile Delta in northern Egypt.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1508 AD</p>
+                                                    <a href="specific-tabs/der-serian.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="arab-kaly">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/arab-kaly.jpg" alt="Arab Kily House" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Arab Kily House</h2>
+                                                <p class="artifact-desc">
+                                                The Arab Kily House was chosen because it is one of the largest remaining houses in the city of Rashid, and for its distinguished location and archaeological value, to be a military museum for the city of Rashid to commemorate the brave city's victory over the Fraser expedition in 1807 AD, and the delay of the British entry into Egypt due to the immunity of this western side until 1882 AD.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1703 AD</p>
+                                                    <a href="specific-tabs/arab-kaly.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="abo-magd">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/abo-magd.jpg" alt="Abu El-Magd Mosque and Shrine" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Abu El-Magd Mosque and Shrine</h2>
+                                                <p class="artifact-desc">
+                                                The mosque of Abdel Aziz Abu El-Magd, the father of Ibrahim Al-Qurashi Al-Desouki.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1628 AD</p>
+                                                    <a href="specific-tabs/abo-magd.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="zaglol">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/zaglol1.webp" alt="Zaghloul Mosque" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Zaghloul Mosque</h2>
+                                                <p class="artifact-desc">
+                                                Zaghloul Mosque is one of the largest and oldest mosques in the city of Rashid. Its construction dates back to the Mamluk era. It was a center for the scientific, religious, and national movement, and from it, the spark of popular resistance was launched against the French campaign in 1801 and the Fraser expedition in 1807.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1587 AD</p>
+                                                    <a href="specific-tabs/zaglol.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="mikhaiel">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/mikhaiel.jpg" alt="Archangel Michael Church" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Archangel Michael Church</h2>
+                                                <p class="artifact-desc">
+                                                An icon of the era of martyrdom and a museum of Coptic art treasures. It is considered one of the landmarks of the ancient city with Pharaonic origins and the oldest church in Egypt ever.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1147 AD</p>
+                                                    <a href="specific-tabs/mikhaiel.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="Wadi-El-Natrun">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/Wadi-El-Natrun.JPG" alt="Monastery of Saint Bishoy" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Monastery of Saint Bishoy</h2>
+                                                <p class="artifact-desc">
+                                                The Monastery of Saint Bishoy, abbreviated as Deir Al-Anba Bishoy, is a Coptic Orthodox monastery. It is the largest inhabited monastery in Wadi El Natrun, located west of the Nile Delta in northern Egypt.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 385 AD</p>
+                                                    <a href="specific-tabs/Wadi-El-Natrun.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="sidi-omar">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/sidi-omar.jpg" alt="Sidi Omar Mosque" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Sidi Omar Mosque</h2>
+                                                <p class="artifact-desc">
+                                                The mosque of Al-Arif Billah Sidi Omar Al-Iflaqui. The mosque is considered one of the most important mosques in the governorate's capital, located in the district bearing his name in the city center.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1819 AD</p>
+                                                    <a href="specific-tabs/sidi-omar.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="abo-abdellah">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/abo-abdellah.jpeg" alt="Abu Abdullah Al-Maghrabi Mosque" style="width: 150%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Abu Abdullah Al-Maghrabi Mosque</h2>
+                                                <p class="artifact-desc">
+                                                Abu Abdullah Al-Maghrabi Mosque is located in the city of Damanhour, specifically on Abu Abdullah Street in the Tamous area. The mosque is known as an oasis for Dhikr and Quran in Beheira Governorate, where Quran recitation sessions and Dhikr circles are held.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1813 AD</p>
+                                                    <a href="specific-tabs/abo-abdellah.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </section>
+
+                                    <section id="statue" class="wall section wood-bg" style="--bgImg: url('https://png.pngtree.com/thumb_back/fh260/background/20210826/pngtree-wood-texture-white-wood-texture-background-image_769768.jpg')">
+
+                                        <div class="artifact" id="lion">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/lion.jpg" alt="Damanhour Lion Statue" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Damanhour Lion Statue</h2>
+                                                <p class="artifact-desc">
+                                                An archaeological statue found in the city of Damanhour and moved from its original location during the renovations of the railway station.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Late Pharaonic Period</p>
+                                                    <a href="specific-tabs/lion.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="canob">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/canob.jpg" alt="Kom Al-Hisn Stele 'Canopus Decree'" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Kom Al-Hisn Stele "Canopus Decree"</h2>
+                                                <p class="artifact-desc">
+                                                A trilingual inscription with three scripts, dating back to the Ptolemaic period in ancient Egypt.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Ptolemaic Period</p>
+                                                    <a href="specific-tabs/canob.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="rashid-stone">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/rashid-stone.JPG" alt="Rosetta Stone" style="width: 70%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Rosetta Stone</h2>
+                                                <p class="artifact-desc">
+                                                A royal decree dating back to 196 BC, written in three different languages: Hieroglyphic, Demotic, and Ancient Greek.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">196 BC</p>
+                                                    <a href="specific-tabs/rashid-stone.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </section>
+
+                                    <section id="place" class=" wall section stone-bg" style="--bgImg: url('https://img.freepik.com/free-photo/abstract-white-surface-with-clight-pores_1194-7514.jpg?semt=ais_hybrid&w=740&q=80')">
+
+                                        <div class="artifact" id="qanater">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/qanater.jpg" alt="Edfina Barrage" style="width: 90%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Edfina Barrage</h2>
+                                                <p class="artifact-desc">
+                                                    Edfina Barrage is the main corridor connecting the governorates of Kafr El Sheikh, Beheira, and Alexandria. It is located at the end of Edfina village, Rashid Center, Beheira Governorate. It is the only barrage that blocks the waters of the Nile River, Rashid branch, from the waters of the Mediterranean Sea.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: 1949 AD</p>
+                                                    <a href="specific-tabs/qanater.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="malaha">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/malaha.jpg" alt="Al-Rayzoniyah Salt Pan" style="width: 90%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Al-Rayzoniyah Salt Pan</h2>
+                                                <p class="artifact-desc">
+                                                    A salt lake located in Wadi El Natrun, Egypt, part of the Wadi El Natrun area famous for its lakes and natural areas. The name refers to the salinity of the water, and 'Al-Rayzoniyah' may be related to a specific type of salt or the natural characteristics of the region.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Date: Unknown</p>
+                                                    <a href="specific-tabs/malaha.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="abkain">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/abkain.jpeg" alt="Tell Al-Abqain" style="width: 90%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Tell Al-Abqain</h2>
+                                                <p class="artifact-desc">
+                                                Military barracks and weapons depots, a bronze sword of King Ramesses II.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Reign of Ramesses II</p>
+                                                    <a href="specific-tabs/abkain.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="defsho">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/defsho.png" alt="Kom Defsho" style="width: 90%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Kom Defsho</h2>
+                                                <p class="artifact-desc">
+                                                    Most of it dates back to the Greek and Roman eras, in addition to its modern historical importance as the theater for one of the most important battles in modern Egyptian history.
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">Post-Dynastic Period</p>
+                                                    <a href="specific-tabs/defsho.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="artifact" id="rooms">
+                                            
+                                            <div class="artifact-img frame">
+                                                <button class="opera-damanhur-butt">
+                                                    <img src="imgs/rooms.png" alt="Kom Al-Ghoraf" style="width: 90%;">
+                                                </button>
+                                            </div>
+
+                                            <div class="artifact-info">
+                                                <h2 class="artifact-title">Kom Al-Ghoraf</h2>
+                                                <p class="artifact-desc">
+                                                An archaeological hill located in Al-Mahmoudiyah Center in Beheira Governorate, northern Egypt. This hill is also known as "Tell Kom Al-Ghoraf Archaeological Site".
+                                                </p>
+                                                <div class="date-but">
+                                                    <p class="artifact-date">.</p>
+                                                    <a href="specific-tabs/rooms.html"><button class="">More-></button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>  
+
+                                    </section>
+
+                                </main>
+
 
     <img src="imgs/me.jpeg" id="me">
     <img src="imgs/khrashikhrashiTheMan.jpg" id="khrashikhrashiTheMan">

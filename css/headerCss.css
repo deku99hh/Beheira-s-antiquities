@@ -51,3 +51,68 @@ header nav .dropDown .dropDownBlock p{
 .phone{
     display: none;
 }
+
+.theme-toggle {
+    background: linear-gradient(135deg, rgb(32 175 54), rgb(0 95 39));
+    border: 1px solid rgb(83, 186, 99);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.setting-tab {
+    position: fixed;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 15px;
+    top: 5rem;
+    left: 12%;
+    width: 10rem;
+    color: black;
+    
+}
+
+.setting-tab button:hover {
+    background-color: rgb(192, 198, 204);
+    transition: all 0.2s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.setting-tab button {
+    width: 5rem;
+    height: 5rem;
+    font-size: 15px;
+    background-color: aliceblue;
+    border: solid rgb(20, 107, 33);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.theme-toggle {
+    background-image: url('https://www.svgrepo.com/show/266961/settings-gear.svg') !important;
+    background-size: 36px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.theme-toggle:checked {
+    background-image: url('https://www.svgrepo.com/show/365893/x-thin.svg');
+    transition: all 0.1s;
+}
+
+.theme-toggle ~ .setting-tab {
+    transition: all 0.1s linear;
+    opacity: 0;
+}
+.theme-toggle:checked ~ .setting-tab {
+    opacity: 1;
+    transition: all 0.1s linear;
+}
