@@ -17,28 +17,14 @@
 </head>
 <body>
     <div class="page-wrapper">
-        <!-- الهيدر -->
-
-        <!-- المحتوى الرئيسي -->
         <main class="content">
-            <!-- إطار الصورة الكبير -->
             <div class="opera-frame">
                 <img src="../imgs/defsho.png" class="opera-image">
             </div>
 
-            <!-- المعلومات التفصيلية -->
             <h1 class="h11">كوم دفشو</h1>
             <h1 class="h11" style="font-size: 18px;color: #494949;">Kom Dafsho</h1>
             <section class="details">
-                <!-- <div class="detail-card">
-                    <h2><i class="fas fa-history"></i> التاريخ والنشأة</h2>
-                    <p>تم افتتاح دار أوبرا دمنهور في عام 2019 كأحد المشروعات الثقافية الكبرى في محافظة البحيرة. جاء إنشاؤها لخدمة الحركة الفنية والثقافية في الدلتا، وتقديم عروض فنية متنوعة تليق بتاريخ المحافظة العريق.</p>
-                </div> -->
-
-                <!-- <div class="detail-card">
-                    <h2><i class="fas fa-archway"></i> التصميم المعماري</h2>
-                    <p>يتميز المبنى بتصميم معماري فريد يجمع بين الأصالة والحداثة، حيث تظهر الواجهات الزجاجية الحديثة مع لمسات من الفن الإسلامي في الزخارف والنقوش. تبلغ سعة المسرح الرئيسي حوالي 1000 متفرج.</p>
-                </div> -->
 
 <div class="detail-card">
     <h2><i class="fas fa-landmark"></i> كوم دفشو</h2>
@@ -78,15 +64,37 @@
     </p>
 </div>
 
-<!-- 
-                <div class="quote-box">
-                    <i class="fas fa-quote-right"></i>
-                    <p class="quote">"الفنون ترتفع بالإنسان، وتجعل من المكان تاريخاً"</p>
-                    <p class="quote-author">— وزارة الثقافة المصرية</p>
-                </div> -->
             </section>
 
-            <!-- زر الرجوع -->
+
+
+
+
+
+<section class="details pc">
+    <div style="width: 100%;">
+        <iframe 
+
+
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109362.34692736795!2d30.092284764800056!3d31.065975107242032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5e7ae3724ecad%3A0xee7c377725330744!2z2YPZiNmFINiv2YHYtNmI2Iwg2YXYsdmD2LIg2YPZgdixINin2YTYr9mI2KfYsdiMINmF2K3Yp9mB2LjYqSDYp9mE2KjYrdmK2LHYqQ!5e0!3m2!1sar!2seg!4v1765465971236!5m2!1sar!2seg"
+
+            width="100%" 
+            height="450" 
+            style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+
+
+
+
+
+
+
             <div class="back-section">
                 <a href="../index.html#defsho" class="back-btn">
                     <i class="fas fa-arrow-right"></i> العودة إلى الجولة الرئيسية
@@ -95,28 +103,5 @@
         </main>
     </div>
 
-    <script>
-        // تأثير التمرير السلس للروابط
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if(targetId !== '#') {
-                    const targetElement = document.querySelector(targetId);
-                    if(targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
-
-        // تأثير عند تحميل الصفحة
-        window.addEventListener('load', () => {
-            document.body.classList.add('loaded');
-        });
-    </script>
 </body>
 </html>

@@ -17,28 +17,14 @@
 </head>
 <body>
     <div class="page-wrapper">
-        <!-- الهيدر -->
-
-        <!-- المحتوى الرئيسي -->
         <main class="content">
-            <!-- إطار الصورة الكبير -->
             <div class="opera-frame">
                 <img src="../imgs/rashid-stone.JPG" class="opera-image">
             </div>
 
-            <!-- المعلومات التفصيلية -->
             <h1 class="h11">حجر رشيد</h1>
             <h1 class="h11" style="font-size: 18px;color: #494949;">Rashid stone</h1>
             <section class="details">
-                <!-- <div class="detail-card">
-                    <h2><i class="fas fa-history"></i> التاريخ والنشأة</h2>
-                    <p>تم افتتاح دار أوبرا دمنهور في عام 2019 كأحد المشروعات الثقافية الكبرى في محافظة البحيرة. جاء إنشاؤها لخدمة الحركة الفنية والثقافية في الدلتا، وتقديم عروض فنية متنوعة تليق بتاريخ المحافظة العريق.</p>
-                </div> -->
-
-                <!-- <div class="detail-card">
-                    <h2><i class="fas fa-archway"></i> التصميم المعماري</h2>
-                    <p>يتميز المبنى بتصميم معماري فريد يجمع بين الأصالة والحداثة، حيث تظهر الواجهات الزجاجية الحديثة مع لمسات من الفن الإسلامي في الزخارف والنقوش. تبلغ سعة المسرح الرئيسي حوالي 1000 متفرج.</p>
-                </div> -->
 
 <div class="detail-card">
     <h2><i class="fas fa-scroll"></i> مرسوم كانوب (Decree of Canopus)</h2>
@@ -68,15 +54,8 @@
     </p>
 </div>
 
-<!-- 
-                <div class="quote-box">
-                    <i class="fas fa-quote-right"></i>
-                    <p class="quote">"الفنون ترتفع بالإنسان، وتجعل من المكان تاريخاً"</p>
-                    <p class="quote-author">— وزارة الثقافة المصرية</p>
-                </div> -->
             </section>
 
-            <!-- زر الرجوع -->
             <div class="back-section">
                 <a href="../index.html#rashid-stone" class="back-btn">
                     <i class="fas fa-arrow-right"></i> العودة إلى الجولة الرئيسية
@@ -85,28 +64,5 @@
         </main>
     </div>
 
-    <script>
-        // تأثير التمرير السلس للروابط
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if(targetId !== '#') {
-                    const targetElement = document.querySelector(targetId);
-                    if(targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
-
-        // تأثير عند تحميل الصفحة
-        window.addEventListener('load', () => {
-            document.body.classList.add('loaded');
-        });
-    </script>
 </body>
 </html>
