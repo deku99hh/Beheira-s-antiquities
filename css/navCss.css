@@ -69,6 +69,19 @@ input[type="checkbox"]:checked ~ .mobileNav {
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
+
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 1em;
+    bottom: 3.7em;
+    background: url("https://aoxoa.co/wp-content/themes/albedo/images/up-arrow.png") center 43% no-repeat rgba(39, 174, 97, 0.7);
+    border-radius: 30px;
+    transition: 0.2s ease-in-out;
+    outline: 0px;
 }
 .showBtn {
   display: block;
