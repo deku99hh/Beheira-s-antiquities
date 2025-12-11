@@ -16,7 +16,104 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    <div class="page-wrapper englishMAIN">
+        <main class="content">
+            <div class="opera-frame">
+                <img src="../imgs/tahona.jpg" class="opera-image">
+            </div>
+
+            <h1 class="h11">Abu Shahin Mill</h1>
+            <h1 class="h11" style="font-size: 18px;color: #494949;">طاحونة أبو شاهين</h1>
+            <section class="details">
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-building"></i> Abu Shahin Mill</h2>
+                    <p>
+                        Abu Shahin Mill is located on Al-Amsily Street in Rosetta (Rashid) city, Beheira Governorate.
+                        It represents one of the most important examples of mills powered by animal force in Egypt.
+                        The builder of the mill is Prince Osman Agha Al-Tobji, the Commander of Artillery in the Ottoman Army at the time.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-history"></i> History and Establishment</h2>
+                    <p>
+                        The mill was constructed in 1808 CE (the end of the 18th century CE),
+                        as part of an integrated architectural complex that includes the historic Al-Amsily House.
+                        The mill served the local population and is considered one of the oldest productive facilities in the city.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-archway"></i> Architectural Style and Function</h2>
+                    <p>
+                        The mill was built using alternating red and black bricks, which gives it both aesthetic appeal and structural strength.
+                        It relied on animal power to turn the heavy grinding stones for milling grains, especially wheat, to produce flour for the city's residents.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-hand-holding-heart"></i> Social and Tourist Role</h2>
+                    <p>
+                        The mill was not only economic; its revenue was allocated for the maintenance of a local historic mosque and to ensure the continuity of religious services.
+                        Today, the mill is a tourist and historical landmark, open to visitors to learn about the lifestyle and production methods during the Ottoman era in Rosetta city.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="details pc">
+                <div style="width: 100%;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.384361978712!2d30.42245352493542!3d31.40353465290608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f689e1377d886f%3A0x3ba468be605fd52d!2z2LfYp9it2YjZhtipINin2KjZiCDYtNin2YfZitmG!5e0!3m2!1sar!2seg!4v1765464824291!5m2!1sar!2seg"
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+
+            <div class="back-section">
+                <a href="../index.html#tahona" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                </a>
+            </div>
+        </main>
+    </div>
+
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/tahona.jpg" class="opera-image">
@@ -94,6 +191,13 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.384361978712!2d3
             </div>
         </main>
     </div>
+
+
+
+
+
+
+    <script src="../script/nav-ish.js"></script>
 
 </body>
 </html>

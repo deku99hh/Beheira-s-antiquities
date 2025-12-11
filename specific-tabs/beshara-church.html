@@ -16,7 +16,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/beshara-church.jpg" class="opera-image">
@@ -92,6 +117,87 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6837.186781281777!2d3
             </div>
         </main>
     </div>
+
+
+
+    <div class="page-wrapper englishMAIN">
+        <main class="content">
+            <div class="opera-frame">
+                <img src="../imgs/beshara-church.jpg" class="opera-image">
+            </div>
+
+            <h1 class="h11">Beshara's Church</h1>
+            <h1 class="h11" style="font-size: 18px;color: #494949;">كنيسة البشارة</h1>
+            <section class="details">
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-church"></i> The Church of the Annunciation (Beshara)</h2>
+                    <p>
+                        The Church of Our Lady of the Annunciation for the Franciscan Friars in Damanhour is one of the oldest Catholic places of worship in Egypt.
+                        It was founded to serve the Catholic expatriate community who came to the city due to the flourishing cotton gin trade in the 19th century.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-history"></i> History and Establishment</h2>
+                    <p>
+                        The church was built in the late 19th century, around 1875.
+                        The church has undergone several renovations to preserve its unique architectural style, and it celebrated its 150th anniversary in March 2025, in the presence of the Latin Church Metropolitan of Egypt, <strong>Claudio Lurati</strong>.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-archway"></i> Architectural Style and Features</h2>
+                    <p>
+                        The church is distinguished by a unique architectural design that is different from other churches in Egypt.
+                        Its minaret includes a historic bell that was installed in 1881.
+                        The church is considered an architectural masterpiece within the urban fabric of Damanhour city.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-map-marked-alt"></i> Location and Rites</h2>
+                    <p>
+                        The church is located on Tamamous Street, near the railway station in Damanhour.
+                        The church belongs to the Latin Catholic denomination, and prayers and masses are held there according to the specific rites of this denomination.
+                        It forms part of the urban and historical development of the city, especially in the Station Square area.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="details pc">
+                <div style="width: 100%;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6837.186781281777!2d30.47212065347422!3d31.037576385057527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f66bc67b6e82b5%3A0x7b89f45b4f7eea2d!2z2YPZhtmK2LPYqSDYp9mE2KjYtNin2LHYqSAo2YPZhtmK2LPYqSDYp9mE2LPYqNi5INio2YbYp9iqKQ!5e0!3m2!1sar!2seg!4v1765464699926!5m2!1sar!2seg"
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+
+            <div class="back-section">
+                <a href="../index.html#beshara-church" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                </a>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+
+            <script src="../script/nav-ish.js"></script>
+
 
 </body>
 </html>

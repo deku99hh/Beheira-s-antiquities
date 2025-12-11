@@ -16,7 +16,108 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    <div class="page-wrapper englishMAIN">
+        <main class="content">
+            <div class="opera-frame">
+                <img src="../imgs/rooms.png" class="opera-image">
+            </div>
+
+            <h1 class="h11">Kom Al-Ghuraf (The Rooms Mound)</h1>
+            <h1 class="h11" style="font-size: 18px;color: #494949;">كوم الغرف</h1>
+            <section class="details">
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-landmark"></i> Tel Kom Al-Ghuraf (The Rooms Mound)</h2>
+                    <p>
+                        An archaeological mound located in Mahmoudiyah Center in Beheira Governorate, also known as "Tel Kom Al-Ghuraf Al-Athari" (The Archaeological Rooms Mound). It is considered one of the most important archaeological mounds in the governorate.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-map-marker-alt"></i> Location and Area</h2>
+                    <p>
+                        It is located in Mahmoudiyah Center and covers a large area of approximately 104 feddans (acres), making it a significant civilizational site across several eras.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-history"></i> Historical and Civilizational Importance</h2>
+                    <p>
+                        - Possible capital of the ancient province of "Metelete" in the past.<br>
+                        - Contains ruins from the Pharaonic, Roman, and Coptic periods.<br>
+                        - Remains of a wide residential community with mud-brick dwellings and gates that are part of a Byzantine city.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-tools"></i> Archaeological Discoveries</h2>
+                    <p>
+                        - Buried dwellings and vaulted baths.<br>
+                        - Pottery vessels containing ancient copper pieces.<br>
+                        - Artifacts reflecting the continuity of residential and civilizational importance over thousands of years.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-shield-alt"></i> Protection and Development</h2>
+                    <p>
+                        The area is part of the state's plan for the development and protection of archaeological mounds and is under the supervision of the Antiquities Authority, to ensure the preservation of this historical treasure.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="details pc">
+                <div style="width: 100%;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.2018943680955!2d30.4196955249431!3d31.215135462160106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f6657c4da487ad%3A0x8322f025fbbe728a!2z2YPZiNmFINin2YTYutix2YE!5e0!3m2!1sar!2seg!4v1765466189156!5m2!1sar!2seg"
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+
+            <div class="back-section">
+                <a href="../index.html#rooms" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/rooms.png" class="opera-image">
@@ -104,6 +205,14 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.2018943680955!2d
             </div>
         </main>
     </div>
+
+
+
+
+
+    <script src="../script/nav-ish.js"></script>
+
+
 
 </body>
 </html>

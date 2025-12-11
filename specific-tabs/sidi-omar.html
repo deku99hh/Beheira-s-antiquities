@@ -16,7 +16,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/sidi-omar.jpg" class="opera-image">
@@ -98,6 +124,80 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.472905648063!2d3
             </div>
         </main>
     </div>
+
+    <div class="page-wrapper englishMAIN">
+        <main class="content">
+            <div class="opera-frame">
+                <img src="../imgs/sidi-omar.jpg" class="opera-image">
+            </div>
+
+            <h1 class="h11">Sidi Omar Mosque</h1>
+            <h1 class="h11" style="font-size: 18px;color: #494949;">مسجد سيدي عمر</h1>
+            <section class="details">
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-mosque"></i> Sidi Omar Al-Aflaqi Mosque</h2>
+                    <p>
+                        The Mosque of the Gnostic Sidi Omar Al-Aflaqi is one of the most important mosques in Damanhour, located in the neighborhood that bears his name in the city center.
+                        The mosque holds great spiritual and historical significance, and his shrine is considered a destination for all Sufi orders, especially the Azmiyya Order.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-history"></i> Lineage and History</h2>
+                    <p>
+                        The lineage of Sidi Omar Al-Aflaqi traces back to Imam Hussein (may God be pleased with him), the grandson of the Prophet Muhammad ﷺ, and from the progeny of Sidi Musa Abi Al-Omran.
+                        The mosque is over 200 years old and has been a center for worship and spiritual remembrance since its founding.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-archway"></i> Architectural Style and Development</h2>
+                    <p>
+                        The mosque reflects traditional Islamic architecture and has undergone several restoration works, the last of which was about 5 years ago,
+                        which included the development of the mosque's corners and the improvement of its facilities to accommodate worshippers and visitors.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-users"></i> Religious and Spiritual Activities</h2>
+                    <p>
+                        During the holy month of Ramadan, the mosque hosts Taraweeh and Tahajjud prayers, circles for the remembrance of the Prophet (Dhikr), and Quran recitation groups (Maqari').
+                        Religious seminars and Quran memorization circles are also held, making it a crucial spiritual center for the community.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="details pc">
+                <div style="width: 100%;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.472905648063!2d30.473926724950136!3d31.040931970673473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f66b18aed2c543%3A0x86930efa5b53a51c!2z2YXYs9is2K8g2LPZitiv2Yog2LnZhdix!5e0!3m2!1sar!2seg!4v1765465574705!5m2!1sar!2seg"
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+
+            <div class="back-section">
+                <a href="../index.html#sidi-omar" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                </a>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="../script/nav-ish.js"></script>
+
+
 
 </body>
 </html>

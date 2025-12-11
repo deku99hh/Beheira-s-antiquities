@@ -16,7 +16,102 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    <div class="page-wrapper englishMAIN">
+        <main class="content">
+            <div class="opera-frame">
+                <img src="../imgs/der-serian.jpg" class="opera-image">
+            </div>
+
+            <h1 class="h11">Monastery of the Virgin Mary - The Syriacs (Syrian Monastery)</h1>
+            <h1 class="h11" style="font-size: 18px;color: #494949;">دير العذراء - السريان</h1>
+            <section class="details">
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-church"></i> Monastery of the Virgin Mary - The Syriacs (Deir El-Suryan)</h2>
+                    <p>
+                        The monastery is located in Wadi El Natrun, west of the Nile Delta in northern Egypt, and is the smallest of the four active monasteries in the area.
+                        It was named after the Syrian monks who resided there over the centuries, and it is dedicated to the worship of the Virgin Mary.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-history"></i> History and Establishment</h2>
+                    <p>
+                        The monastery was built in the 6th century CE and contains the main church, which is decorated with magnificent murals and a dome depicting scenes from the Bible, including the Nativity of Christ.
+                        In 1988 CE, a small fire led to the discovery of a rare mural dating back to 950 CE, depicting the celebration of the Virgin Mary.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-archway"></i> Architectural Style and Decorations</h2>
+                    <p>
+                        The monastery is distinguished by the doors of its sanctuary, which are adorned with images of Christ, the Virgin Mary, and other saints.
+                        In addition, the interior murals reflect ancient Coptic art and Syrian influences in the monastic architecture.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-book"></i> Manuscripts and Cultural Treasures</h2>
+                    <p>
+                        In the 19th century, Europeans discovered a rare collection of Syriac manuscripts in the monastery's library.
+                        These include the oldest Greek texts of Aristotle, Euclid, and Hippocrates, which are currently preserved in the Vatican Library and other international institutions.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="details pc">
+                <div style="width: 100%;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.1670711635716!2d30.357332524978798!3d30.317765305570134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458c7db4896a56b%3A0x638e12d10c89685c!2z2K_ZitixINin2YTYs9mK2K_YqSDYp9mE2LnYsNix2KfYoSAtINin2YTYs9ix2YrYp9mG!5e0!3m2!1sar!2seg!4v1765464903528!5m2!1sar!2seg"           
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+
+            <div class="back-section">
+                <a href="../index.html#der-serian" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/der-serian.jpg" class="opera-image">
@@ -95,6 +190,10 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.1670711635716!2d
             </div>
         </main>
     </div>
+
+
+
+            <script src="../script/nav-ish.js"></script>
 
 </body>
 </html>

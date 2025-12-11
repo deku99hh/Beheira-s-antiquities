@@ -16,7 +16,98 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+<div class="page-wrapper englishMAIN">
+    <main class="content">
+        <div class="opera-frame">
+            <img src="../imgs/abo-magd.jpg" class="opera-image">
+        </div>
+
+        <h1 class="h11">Abu al-Majd Mosque and Shrine</h1>
+        <h1 class="h11" style="font-size: 18px;color: #494949;">مسجد وضريح ابو المجد</h1>
+        <section class="details">
+
+            <div class="detail-card">
+                <h2><i class="fas fa-mosque"></i> Abu al-Majd Mosque and Shrine</h2>
+                <p>
+                    The Mosque and Shrine of Sidi Abdul Aziz Abi al-Majd, father of Ibrahim al-Qurashi al-Desouqi, is located in Al-Majd village in Beheira Governorate.
+                    The shrine is considered an important spiritual center for the town, honoring Sidi Abdul Aziz (may God be pleased with him), one of the greatest saints of God in the governorate.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h2><i class="fas fa-history"></i> History and Establishment</h2>
+                <p>
+                    The virtues of Sidi Abdul Aziz were recorded in the Ottoman era in 1628 CE, where he was known for his piety and for performing Hajj (pilgrimage) on foot.
+                    The shrine was initially separate, but the Grand Mosque was later annexed to the shrine during the reign of the Muhammad Ali Dynasty, while preserving the Ottoman minaret to this day.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h2><i class="fas fa-archway"></i> Design and Features</h2>
+                <p>
+                    The mosque and the shrine are connected via a separating corridor. The shrine is surrounded by palm trees and gardens adorned with flowers, with lanterns hung throughout the night.
+                    The mosque is distinguished by a sense of reverence that inspires appreciation and humility in the visitor upon entering, and it serves as a place for worship and spiritual contemplation.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h2><i class="fas fa-users"></i> Rituals and Celebrations</h2>
+                <p>
+                    Egyptians used to celebrate the Mawlid (birthday) of Sidi Abdul Aziz on the day following the closing night of the Mawlid of Sidi Ibrahim al-Qurashi al-Desouqi.
+                    Visitors, sheikhs, and scholars travel from distances up to three miles across the Nile to visit the shrine. The shrine is famous for its connection to the Burhani chain of sheikhs and local Sufism.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="details pc">
+            <div style="width: 100%;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d617842.0725571808!2d30.91436789951459!3d31.189478140129253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f65b145cf031dd%3A0xd8ea457a0ebac20c!2z2KPYqNmIINin2YTZhdis2K_YjCDZg9mB2LEg2KXYqNix2KfZh9mK2YXYjCDZgtiz2YUg2K_Ys9mI2YLYjCDZhdit2KfZgdi42Kkg2YPZgdixINin2YTYtNmK2K4gNjgzMTMyMQ!5e0!3m2!1sar!2seg!4v1765465134200!5m2!1sar!2seg"
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+
+        <div class="back-section">
+            <a href="../index.html#abo-magd" class="back-btn">
+                <i class="fas fa-arrow-right"></i> Back to the Main Tour
+            </a>
+        </div>
+    </main>
+</div>
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/abo-magd.jpg" class="opera-image">
@@ -96,6 +187,7 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d617842.0725571808!2d3
             </div>
         </main>
     </div>
+            <script src="../script/nav-ish.js"></script>
 
 </body>
 </html>

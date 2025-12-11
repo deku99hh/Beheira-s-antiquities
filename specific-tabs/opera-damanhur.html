@@ -16,7 +16,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    <div class="page-wrapper arabicMAIN">
 
         <main class="content">
             <div class="opera-frame">
@@ -103,5 +133,95 @@
         </main>
     </div>
 
+
+    <div class="page-wrapper englishMAIN">
+
+        <main class="content">
+            <div class="opera-frame">
+                <img src="../imgs/opera-damanhur.jpg" alt="Damanhour Opera House" class="opera-image">
+            </div>
+
+            <h1 class="h11">Damanhour Opera House</h1>
+            <h1 class="h11" style="font-size: 18px;color: #494949;">دار أوبرا دمنهور</h1>
+            <section class="details">
+                <div class="detail-card">
+                    <h2> Information</h2>
+                    <p>The Damanhour Opera House is a historic opera house that was built
+                        during the reign of King Fuad I in 1930 CE, modeled after the Cairo Opera House, which burned down in the seventies of the last century.
+                        King Fuad laid the foundation stone for the Municipality Building, the Cinema, and the Library on November 8, 1930 CE.
+                        The western section of the building was first named "Farouk Cinema and Theatre," then the name was changed from "Farouk Cinema" to "Al-Baladiya (Municipality) Cinema" in 1952 CE. This continued until 1977 CE when the name was changed to "Al-Nasr Winter Cinema." Finally,
+                        it was named "Damanhour Theatre and Opera." As for the library, it was named "King Fuad Library," then later renamed after the late writer
+                        Tawfik al-Hakim. The Municipality Building occupies the eastern section, while the Cinema and Theatre Building occupies the western section.</p>
+                    <p></p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-map-marked-alt"></i> Establishment</h2>
+                    <p> The foundation stone was laid by King Fuad I in 1930 CE.
+                        <br>
+                        Original Name: It was initially named "Farouk Cinema and Theatre."
+                        <br>
+                        Transformations: After the 1952 Revolution, its name was changed to "Al-Baladiya Cinema," and it continued to operate as a cinema and theatre for a long period before suffering neglect.
+                        <br>
+                        Affiliation: It currently belongs to the Egyptian Opera House (The National Cultural Center).</p>
+                </div>
+                <div class="detail-card">
+                    <h2><i class="fas fa-map-marked-alt"></i> Architectural Design</h2>
+                    <p>
+
+                        Style: It was designed in the Italian Classical style, which was prevalent in Egyptian architecture during the first half of the twentieth century.
+                        <br>
+                        Features: The building is distinguished by fine geometric decorations, towering columns, and decorated ceilings, making it a visual artistic masterpiece before being a theatre.
+                        <br>
+                        Harmony: The design combines Islamic (Andalusian) architectural elements with European touches.
+                    </p>
+                </div>
+                <div class="detail-card">
+                    <h2><i class="fas fa-map-marked-alt"></i> Components of the House</h2>
+                    <p>
+                        The Main Theatre: Accommodates a large number of the audience (around 325 seats) and is equipped to host concerts and theatrical performances.
+                        <br>
+                        The Piano Hall: Dedicated to small musical performances and seminars.
+                        <br>
+                        The Music Library: Contains an artistic and cultural archive.
+                        <br>
+                        The Cultural Salon: For holding intellectual and literary gatherings.
+                        <br>
+                        The External Garden: A green space surrounding the building, adding to its aesthetic charm.
+                    </p>
+                </div>
+            </section>
+
+            <section class="details pc">
+                <div style="width: 100%;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.519767313795!2d30.47137765602499!3d31.039626881531287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f66bb9eddbeb99%3A0x68d8284dcdeb37bf!2z2K_Yp9ixINij2YjYqNix2Kcg2K_ZhdmG2YfZiNix!5e0!3m2!1sar!2seg!4v1765463681954!5m2!1sar!2seg" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+
+            <div class="back-section">
+                <a href="../index.html#opera-damanhur" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                </a>
+            </div>
+        </main>
+    </div>
+
+
+
+
+    <script src="../script/nav-ish.js"></script>
+
+
+
+    
 </body>
 </html>

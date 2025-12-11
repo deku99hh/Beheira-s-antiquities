@@ -386,5 +386,5 @@ main::after {
     width: 2px;
     height: 100%;
     background-color: #3a2400;
-    z-index: -1;
+    z-index: 0;
 }

@@ -16,7 +16,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/malaha.jpg" class="opera-image">
@@ -71,6 +97,70 @@
             </div>
         </main>
     </div>
+
+<div class="page-wrapper englishMAIN">
+    <main class="content">
+        <div class="opera-frame">
+            <img src="../imgs/malaha.jpg" class="opera-image">
+        </div>
+
+        <h1 class="h11">Rhyzoun Salt Flat</h1>
+        <h1 class="h11" style="font-size: 18px;color: #494949;">ملاحة الرايزونية</h1>
+        <section class="details">
+
+            <div class="detail-card">
+                <h2><i class="fas fa-water"></i> Rhyzoun Salt Flat</h2>
+                <p>
+                    A saline lake located in Wadi El Natrun, known as the "Lake of the Sky." It is characterized by a high concentration of natural salts and is part of the unique environment of the Western Desert.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h2><i class="fas fa-map-marked-alt"></i> Location</h2>
+                <p>
+                    The salt flat is situated in the northeastern part of Wadi El Natrun in Beheira Governorate, within an arid desert region.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h2><i class="fas fa-flask"></i> Saline Characteristics</h2>
+                <p>
+                    The water of the salt flat contains the natural mineral Natron, a mixture of sodium carbonate and sodium bicarbonate, in addition to sodium chloride and sulfate, which makes it extremely salty.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h2><i class="fas fa-history"></i> Historical Importance</h2>
+                <p>
+                    Ancient Egyptians used Natron salts in mummification, and its deposits were of high commercial value and were exported to the ancient world.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h2><i class="fas fa-leaf"></i> Wildlife and Environment</h2>
+                <p>
+                    The salt flat is part of a protected desert environment and hosts protected species of animals such as Egyptian gazelles, in addition to being a location for therapeutic tourism.
+                </p>
+            </div>
+
+        </section>
+
+
+        <div class="back-section">
+            <a href="../index.html#malaha" class="back-btn">
+                <i class="fas fa-arrow-right"></i> Back to the Main Tour
+            </a>
+        </div>
+    </main>
+</div>
+
+
+
+
+
+
+            <script src="../script/nav-ish.js"></script>
+
 
 </body>
 </html>

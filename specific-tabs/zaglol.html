@@ -16,7 +16,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/zaglol2.jpg" class="opera-image">
@@ -97,6 +125,84 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.5514443319485!2d
             </div>
         </main>
     </div>
+
+
+<div class="page-wrapper englishMAIN">
+    <main class="content">
+        <div class="opera-frame">
+            <img src="../imgs/zaglol2.jpg" class="opera-image">
+        </div>
+
+        <h1 class="h11">Zaghloul Mosque</h1>
+        <h1 class="h11" style="font-size: 18px;color: #494949;">مسجد زغلول</h1>
+        <section class="details">
+
+            <div class="detail-card">
+                <h2><i class="fas fa-mosque"></i> Zaghloul Mosque</h2>
+                <p>
+                    Zaghloul Mosque is one of the largest and oldest mosques in Rosetta (Rashid) city, and is considered a center for scientific, religious, and national movements in the city.
+                    It was the starting point for the popular resistance against the French Campaign in 1801 and the Fraser Campaign in 1807.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h2><i class="fas fa-history"></i> History and Establishment</h2>
+                <p>
+                    The mosque was built in 985 AH / 1587 CE by Zaghloul, the Mamluk of Sayed Harun, one of the princes of the 17th century CE,
+                    and it includes Zaghloul's shrine. The mosque is registered among the Islamic and Coptic Antiquities records and reflects the late Ottoman style influenced by the Mamluk era.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h2><i class="fas fa-archway"></i> Architectural Style and Features</h2>
+                <p>
+                    The mosque spans 90 meters in length and 48 meters in width, and features 244 columns made of marble and granite, with small dome-shaped ceilings and a garden planted with palm trees.
+                    The mosque combines the Ottoman style with traditional Mamluk art, and includes two interconnected جامع (Jame'/congregational) structures.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h2><i class="fas fa-tools"></i> Restoration and Development</h2>
+                <p>
+                    In 2018, the Minister of Antiquities and Endowments inaugurated the first phase of the restoration of the historic Zaghloul Mosque,
+                    attended by officials from the Antiquities Authority and Endowments, and members of the Parliament. The restoration preserved the urban heritage of the mosque, and prayers resumed inside the mosque after the work was completed.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="details pc">
+            <div style="width: 100%;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.5514443319485!2d30.424240524935655!3d31.398929553132906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f6898faff99ad3%3A0x528e14dce095cff2!2z2YXYs9is2K8g2LLYutmE2YjZhA!5e0!3m2!1sar!2seg!4v1765465230758!5m2!1sar!2seg" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+
+        <div class="back-section">
+            <a href="../index.html#zaglol" class="back-btn">
+                <i class="fas fa-arrow-right"></i> Back to the Main Tour
+            </a>
+        </div>
+    </main>
+</div>
+
+
+
+
+
+
+
+    <script src="../script/nav-ish.js"></script>
+
 
 </body>
 </html>

@@ -16,7 +16,109 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="page-wrapper englishMAIN">
+
+        <main class="content">
+            <div class="opera-frame">
+                <img src="../imgs/baramos.png" class="opera-image">
+            </div>
+
+            <h1 class="h11">Monastery of Paramos (El Baramous)</h1>
+            <h1 class="h11" style="font-size: 18px;color: #494949;">دير البراموس</h1>
+            <section class="details">
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-church"></i> Monastery of Paramos</h2>
+                    <p>
+                        The Monastery of the Virgin Mary of Paramos (El Baramous) is one of the oldest and most important monasteries of the Coptic Orthodox Church.
+                        It is located in Wadi El Natrun, 12 km from the Cairo–Alexandria Desert Road.
+                        The monastery is known for its historical authenticity and spiritual depth, and is considered one of the most prominent centers of monastic life in Egypt since the early centuries.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-history"></i> History and Establishment</h2>
+                    <p>
+                        The monastery is attributed to the Virgin Mary, and is also known as the <strong>Monastery of the Romans (Deir El-Roumos)</strong> due to the presence of
+                        the cave of the princes, where the two princes <strong>Maximus and Domatius</strong>, sons of Emperor Valentinian I (364–375 CE), lived.
+                        Some sources indicate that its founding dates back to the 4th century CE during the time of Saint <strong>Macarius the Great</strong>,
+                        who established the monastic life in the wilderness of Scetis (Shihet) in 330 CE.
+                        The current monastery began as a church in the 16th century and later developed into a complete monastery.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-archway"></i> Architecture and Components of the Monastery</h2>
+                    <p>
+                        The monastery covers an area of nearly two feddans and thirteen carats in the far north of Wadi El Natrun.
+                        It includes <strong>five historic churches</strong> and a library containing hundreds of rare manuscripts in multiple languages.
+                        The monastery also contains a historic fortress, a guesthouse, a bakery, and several storerooms.
+                        The towering walls surrounding it were built after the sixth Berber raid in 817 CE,
+                        reaching a height of 11 meters and a width of 2.5 meters, reflecting the monastery's defensive role during ancient times.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-cross"></i> Saints and Spiritual Identity</h2>
+                    <p>
+                        The monastery is associated with a number of the Church's most prominent saints, including:
+                        <strong>Saint Mary the Virgin</strong>,
+                        <strong>Maximus and Domatius</strong>,
+                        <strong>Anba Moses the Black</strong> — a symbol of true repentance,
+                        <strong>Saint Isidore</strong> the priest of Scetis,
+                        and <strong>Saint Arsenius</strong>, the teacher of the princes.
+                        The monastery is also considered one of the <strong>Theotokos</strong> (Mother of God) monasteries established in the 6th century to resist the Julian heresy.
+                        The monastery includes two historic minarets that add to its spiritual character and the tranquility that distinguishes Wadi El Natrun.
+                    </p>
+                </div>
+
+
+            </section>
+            <section class="details pc">
+                <div style="width: 100%;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.7826438371717!2d30.2706743!3d30.357126599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458c9e6385aae6d%3A0x38ddd101d08daca!2z2K_ZitixINin2YTYs9mK2K_YqSDYp9mE2LnYsNix2KfYoSDYp9mE2KjYsdin2YXZiNizINmI2KfYr9mKINin2YTZhti32LHZiNmG!5e0!3m2!1sar!2seg!4v1765464054670!5m2!1sar!2seg"
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+            <div class="back-section">
+                <a href="../index.html#baramos" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                </a>
+            </div>
+        </main>
+    </div>
+    <div class="page-wrapper arabicMAIN">
 
         <main class="content">
             <div class="opera-frame">
@@ -95,6 +197,9 @@
             </div>
         </main>
     </div>
+
+
+                <script src="../script/nav-ish.js"></script>
 
 </body>
 </html>

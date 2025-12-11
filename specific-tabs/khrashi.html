@@ -16,7 +16,109 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    <div class="page-wrapper englishMAIN">
+        <main class="content">
+            <div class="opera-frame">
+                <img src="../imgs/khrashi.png" class="opera-image">
+            </div>
+
+            <h1 class="h11">Al-Kharashi Mosque</h1>
+            <h1 class="h11" style="font-size: 18px;color: #494949;">مسجد الخراشى</h1>
+            <section class="details">
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-mosque"></i> Al-Kharashi Mosque</h2>
+                    <p>
+                        Al-Kharashi Mosque is located in Naqarha village in Damanhour city, Beheira Governorate,
+                        and is considered one of the oldest and most important mosques in the governorate. The mosque is famous for the presence of the shrine of
+                        <strong>Sidi Abd El-Muta'al Al-Kharashi</strong>, a prominent Sufi figure in the region,
+                        making it a religious and spiritual destination for the people of Beheira and its visitors.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-history"></i> History and Establishment</h2>
+                    <p>
+                        Inscriptions on the mosque's minbar (pulpit) indicate that it was established in **1300 AH / 1882 CE**.
+                        The mosque was built of red brick on a semi-rectangular area,
+                        and was later renovated during the Ottoman era, while preserving its historical features.
+                        The mosque is considered a testament to Islamic architecture in Beheira,
+                        especially with its connection to the history of the village, Sufi orders, and their pioneers.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-archway"></i> Architectural Design</h2>
+                    <p>
+                        The mosque is characterized by having two entrances in the eastern and northern walls,
+                        and internally it contains four porticos parallel to the Qibla wall, formed by three rows of arcades.
+                        The ceilings rely on cylindrical columns covered with plaster.
+                        The second portico is centered by a **Shukhshaykha** (lantern/skylight) which provides natural lighting and ventilation.
+                        The mosque had a historical minaret that was demolished, leaving only its base, which still stands as a witness to its ancient architecture.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-feather-alt"></i> Minbar and Decorations</h2>
+                    <p>
+                        The mosque contains a distinctive historic minbar made of delicate Maimouni turned wood,
+                        adorned with geometric motifs and *sadaib* (wooden strips) of interlocking woodwork (*mu'aqqli*).
+                        The minbar's inscriptions include Quranic verses and the name of its craftsman, **Ahmed Aziz**,
+                        and the minbar is considered one of the most prominent artistic elements showcasing the skill of wood craftsmanship in the 19th century.
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="details pc">
+                <div style="width: 100%;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.5530127948346!2d30.475758124950286!3d31.03870097078221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f66bb727f54051%3A0x1ad0363c00ff4165!2z2YXYs9is2K8g2KfZhNiu2LHYp9i02Yo!5e0!3m2!1sar!2seg!4v1765463930275!5m2!1sar!2seg"
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+            <div class="back-section">
+                <a href="../index.html#khrashi" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/khrashi.png" class="opera-image">
@@ -91,6 +193,15 @@
             </div>
         </main>
     </div>
+
+
+
+
+
+
+
+            <script src="../script/nav-ish.js"></script>
+
 
 </body>
 </html>

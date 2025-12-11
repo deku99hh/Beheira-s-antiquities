@@ -16,7 +16,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/mikhaiel.jpg" class="opera-image">
@@ -96,6 +126,85 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d260295.0427422505!2d3
             </div>
         </main>
     </div>
+
+    <div class="page-wrapper englishMAIN">
+        <main class="content">
+            <div class="opera-frame">
+                <img src="../imgs/mikhaiel.jpg" class="opera-image">
+            </div>
+
+            <h1 class="h11">Church of the Archangel Michael</h1>
+            <h1 class="h11" style="font-size: 18px;color: #494949;">كنيسة الملاك ميخائيل</h1>
+            <section class="details">
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-church"></i> Church of the Archangel Michael</h2>
+                    <p>
+                        The Church of the Archangel Michael in Damanhour is one of the oldest churches in Egypt, known as an icon of the Era of the Martyrs and a museum of Coptic art treasures.
+                        The church contains 72 icons representing themes from the Old and Christian Testaments, including the Annunciation, Nativity, Crucifixion, Ascension, angels, and martyrs.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-history"></i> History and Establishment</h2>
+                    <p>
+                        The church contains icons, some of which date back to the 12th and 13th Hijri centuries (18th and 19th centuries CE),
+                        such as the icon of the Archangel Michael, after whom the church is named, the icon of Saints Peter and Paul, and the icon of the Martyr Saint George.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-paint-brush"></i> Artistic Style</h2>
+                    <p>
+                        The artistic styles of the icons vary between Coptic, Jerusalemite, and Greek, and they were executed in the tempera technique.
+                        The icons contain inscriptions in Arabic script and Coptic numerals to document the date of painting and the name of the artist, such as Anastasi El Roumi (Anastasi the Roman).
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-users"></i> Themes and Symbols</h2>
+                    <p>
+                        The themes include icons from the Old Testament, such as the Ascension of Elijah to Heaven, and Christian themes like the Annunciation, the Virgin and Child, the Crucifixion, and the Resurrection.
+                        It also includes icons of martyrs such as Saint Damiana and the Forty Holy Women Martyrs, and the Head of Saint John the Baptist.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="details pc">
+                <div style="width: 100%;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d260295.0427422505!2d30.764333332310947!3d30.99015059452871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f66bb0085d3d01%3A0x1ba8377be0a3de0c!2z2YPZhtmK2LPYqSDYsdim2YrYsyDYp9mE2YXZhNin2KbZg9ipINin2YTYrNmE2YrZhCDZhdmK2K7Yp9im2YrZhCDYqNiv2YXZhtmH2YjYsSDYpdmK2KjYp9ix2LTZitipINin2YTYqNit2YrYsdipINmIINmF2LHYs9mJINmF2LfYsdmI2K0g2Ygg2KfZhNiu2YXYsyDZhdiv2YYg2KfZhNi62LHYqNmK2Kk!5e0!3m2!1sar!2seg!4v1765465333327!5m2!1sar!2seg" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+
+            <div class="back-section">
+                <a href="../index.html#mikhaiel" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                </a>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+
+            <script src="../script/nav-ish.js"></script>
+
 
 </body>
 </html>

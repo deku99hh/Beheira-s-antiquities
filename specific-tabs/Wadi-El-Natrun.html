@@ -16,7 +16,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/Wadi-El-Natrun.JPG" class="opera-image">
@@ -96,6 +122,79 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.121531314282!2d3
             </div>
         </main>
     </div>
+    
+    <div class="page-wrapper englishMAIN">
+        <main class="content">
+            <div class="opera-frame">
+                <img src="../imgs/Wadi-El-Natrun.JPG" class="opera-image">
+            </div>
+
+            <h1 class="h11">Monastery of Saint Bishoy (Anba Bishoy)</h1>
+            <h1 class="h11" style="font-size: 18px;color: #494949;">دير الأنبا بيشوي</h1>
+            <section class="details">
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-church"></i> Monastery of Saint Bishoy</h2>
+                    <p>
+                        The Monastery of Saint Anba Bishoy is the largest of the four active monasteries in Wadi El Natrun. It is a Coptic Orthodox monastery of great historical and spiritual importance,
+                        and is located west of the Nile Delta in northern Egypt.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-history"></i> History and Establishment</h2>
+                    <p>
+                        The monastery was founded in the late 4th century CE by Anba Bishoy and was contemporary with Saint Macarius the Great.
+                        The monastery was destroyed several times by invaders and Bedouins and was rebuilt and restored many times throughout the ages, including the years 645, 840, and 1319 CE.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-archway"></i> Development and Architecture</h2>
+                    <p>
+                        The monastery includes the monks' cells (qalali), the main church, and the rocky cave where Anba Bishoy lived.
+                        During the time of Pope Shenouda III, the cells were renovated, the water well was restored, electricity was introduced, and 300 feddans (acres) of desert land were added for reclamation purposes.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-tools"></i> Religious and Spiritual Activities</h2>
+                    <p>
+                        The Holy Myron oil (Chrism) is cooked and prepared at the monastery to serve Coptic churches inside and outside Egypt, and it was prepared five times during his time.
+                        The monastery represents an important spiritual center for worship and meditation, and continues to welcome monks and visitors seeking tranquility and prayer.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="details pc">
+                <div style="width: 100%;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.121531314282!2d30.362159424978802!3d30.31906080550827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458c7c3beb2fab1%3A0x16e6d5135923c4f7!2z2K_ZitixINin2YTYo9mG2KjYpyDYqNmK2LTZiNmK!5e0!3m2!1sar!2seg!4v1765465461509!5m2!1sar!2seg"
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+
+            <div class="back-section">
+                <a href="../index.html#Wadi-El-Natrun" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                </a>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="../script/nav-ish.js"></script>
+
 
 </body>
 </html>

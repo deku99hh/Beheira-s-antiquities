@@ -16,7 +16,108 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    <div class="page-wrapper englishMAIN">
+        <main class="content">
+            <div class="opera-frame">
+                <img src="../imgs/defsho.png" class="opera-image">
+            </div>
+
+            <h1 class="h11">Kom Dafsho</h1>
+            <h1 class="h11" style="font-size: 18px;color: #494949;">كوم دفشو</h1>
+            <section class="details">
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-landmark"></i> Kom Dafsho</h2>
+                    <p>
+                        A prominent archaeological mound in Kafr El Dawwar Center, most of its remnants date back to the Greek and Roman eras, and it is considered one of the most notable archaeological sites in the area.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-boxes"></i> Archaeological Discoveries</h2>
+                    <p>
+                        - Stone and pottery sarcophagi.<br>
+                        - Pottery vessels dating back to the Greek and Roman eras.<br>
+                        - Tombs and other archaeological mounds such as Kom Eishou, Kom El-Farag, Sidi Ghazi, Kom Al-Taraghya, and Tel Al-Qanayis.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-history"></i> Historical Importance</h2>
+                    <p>
+                        The site was not limited to the Greek and Roman periods; it was also the scene of one of the most important battles in modern Egyptian history: the Battle of Kafr El Dawwar in 1882, between the Egyptian army led by Ahmed Orabi and the British forces, which ended in a victory for the Egyptian forces.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-museum"></i> Museums and Exhibits</h2>
+                    <p>
+                        - Kafr El Dawwar Museum displays archaeological artifacts, traditional crafts, and photographs documenting the city's history and cultural heritage.<br>
+                        - Some sites have been recently surveyed by the Egypt Exploration Society (EES), such as Kom El-Ghassouli, Abdo Pasha, and Kom El-Mujeir.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-shield-alt"></i> Heritage Preservation</h2>
+                    <p>
+                        Some sites have been subjected to encroachment over time, underscoring the importance of preserving the archaeological and historical heritage of the city and its surrounding areas.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="details pc">
+                <div style="width: 100%;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109362.34692736795!2d30.092284764800056!3d31.065975107242032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5e7ae3724ecad%3A0xee7c377725330744!2z2YPZiNmFINiv2YHYtNmI2Iwg2YXYsdmD2LIg2YPZgdixINin2YTYr9mI2KfYsdiMINmF2K3Yp9mB2LjYqSDYp9mE2KjYrdmK2LHYqQ!5e0!3m2!1sar!2seg!4v1765465971236!5m2!1sar!2seg"
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+
+            <div class="back-section">
+                <a href="../index.html#defsho" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/defsho.png" class="opera-image">
@@ -102,6 +203,11 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109362.34692736795!2d
             </div>
         </main>
     </div>
+
+
+
+            <script src="../script/nav-ish.js"></script>
+
 
 </body>
 </html>

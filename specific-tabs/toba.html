@@ -16,7 +16,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/toba.jpeg" class="opera-image">
@@ -82,6 +112,82 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.6385073623974!2d
             </div>
         </main>
     </div>
+
+<div class="page-wrapper englishMAIN">
+    <main class="content">
+        <div class="opera-frame">
+            <img src="../imgs/toba.jpeg" class="opera-image">
+        </div>
+
+        <h1 class="h11">Toba Mosque</h1>
+        <h1 class="h11" style="font-size: 18px;color: #494949;">مسجد التوبة</h1>
+        <section class="details">
+
+            <div class="detail-card">
+                <h2><i class="fas fa-mosque"></i> Toba Mosque</h2>
+                <p>
+                    Toba Mosque is located on Orabi Street near the railway station in Damanhour city,
+                    and is considered one of the oldest and most important mosques in Egypt and North Africa.
+                    The mosque was built by **Amr ibn al-Aas** (may God be pleased with him) in **21 AH**
+                    before the conquest of Alexandria, making it the second mosque to be built in Africa after his mosque in Fustat.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h2><i class="fas fa-archway"></i> Historical and Architectural Value</h2>
+                <p>
+                    The mosque is considered a masterpiece of early Islamic architecture,
+                    and contains a rare column of pure marble, considered one of the finest types of marble in the world.
+                    The mosque acquired its name from being a destination for penitents and devout worshippers (*Awwabin*) who seek tranquility and return to God.
+                    Thanks to its prominent location in the heart of Damanhour and its large capacity that accommodates thousands of worshippers,
+                    the mosque has remained a religious and spiritual center for the city's residents across the centuries.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h2><i class="fas fa-users"></i> Social and Political Role</h2>
+                <p>
+                    The mosque plays a prominent social role, as it houses the **Institute for the Preparation of Preachers (Du'at)**
+                    and a center for memorizing the Holy Quran, as well as supplementary classes for students,
+                    making it an influential educational and pedagogical center in Damanhour.
+                    The mosque has also been linked to political events in Egypt,
+                    as it served as a launch point for demonstrations and popular movements against injustice and tyranny,
+                    especially before and after the January 25 Revolution, becoming a living witness to the city's history and the struggle of its people.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="details pc">
+            <div style="width: 100%;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.6385073623974!2d30.47166462495034!3d31.03631977089833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f66bba8a79e367%3A0x25c02f035cd20258!2z2YXYs9is2K8g2KfZhNiq2YjYqNip2Iwg2K_ZhdmG2YfZiNix!5e0!3m2!1sar!2seg!4v1765464171810!5m2!1sar!2seg"
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <div class="back-section">
+            <a href="../index.html#toba" class="back-btn">
+                <i class="fas fa-arrow-right"></i> Back to the Main Tour
+            </a>
+        </div>
+    </main>
+</div>
+
+
+
+
+
+
+
+    <script src="../script/nav-ish.js"></script>
+
 
 </body>
 </html>

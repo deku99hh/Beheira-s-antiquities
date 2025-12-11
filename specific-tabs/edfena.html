@@ -16,7 +16,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/edfena.jpeg" class="opera-image">
@@ -85,6 +108,86 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.5894566450247!2d
             </div>
         </main>
     </div>
+
+    <div class="page-wrapper englishMAIN">
+        <main class="content">
+            <div class="opera-frame">
+                <img src="../imgs/edfena.jpeg" class="opera-image">
+            </div>
+
+            <h1 class="h11">Edfina Railway Bridge</h1>
+            <h1 class="h11" style="font-size: 18px;color: #494949;">كوبري السكة الحديد بادفينا</h1>
+            <section class="details">
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-train"></i> Edfina Railway Bridge</h2>
+                    <p>
+                        The Edfina Railway Bridge is located in Beheira Governorate, next to the historic Edfina Barrage on the Rosetta Branch of the Nile River.
+                        It is an essential part of the irrigation and railway system in Egypt.
+                        The bridge connects the Al-Bouseily area with Desouk city and serves rail traffic and river navigation.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-history"></i> History and Establishment</h2>
+                    <p>
+                        The bridge and its accompanying barrages were constructed in the forties and fifties of the last century,
+                        specifically during the reign of King Farouk, around 1950.
+                        The purpose of its construction was to enhance the land and water transport infrastructure and connect the regions of Beheira to each other.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-archway"></i> Engineering Design</h2>
+                    <p>
+                        The bridge is characterized by being a movable section that opens to allow ships and boats to pass through the Nile River's course,
+                        and closes for trains to cross. The bridge is considered an engineering masterpiece that combines strength, durability, and practical function,
+                        embodying the skill of Egyptian engineers in designing railway and road infrastructure.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-road"></i> Modern Development</h2>
+                    <p>
+                        In 2016, the development work for the Edfina railway station crossing and the construction of a new car bridge were inspected,
+                        with the aim of improving traffic flow and reducing congestion in the area, while preserving the historical and engineering importance of the original bridge.
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="details pc">
+                <div style="width: 100%;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.5894566450247!2d30.52237252494014!3d31.287449358613785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f661aef2362797%3A0x8bbdd899e585b4bc!2z2YPZiNio2LHZiSDYpdiv2YHZitmG2Kc!5e0!3m2!1sar!2seg!4v1765464394321!5m2!1sar!2seg"             height="450" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+
+            <div class="back-section">
+                <a href="../index.html#edfena   " class="back-btn">
+                    <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                </a>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+
+            <script src="../script/nav-ish.js"></script>
 
 </body>
 </html>

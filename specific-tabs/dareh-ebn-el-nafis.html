@@ -14,80 +14,191 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Reem+Kufi&family=Cairo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+    
 </head>
 <body>
-    <div class="page-wrapper">
-        <main class="content">
-            <div class="opera-frame">
-                <img src="../imgs/dareh-ebn-el-nafis.jpg" class="opera-image">
+    
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
             </div>
+        </div>
 
-            <h1 class="h11">ضريح ابن النفيس</h1>
-            <h1 class="h11" style="font-size: 18px;color: #494949;">Ibn al-Nafis's Mausoleum</h1>
-            <section class="details">
 
-                <div class="detail-card">
-                    <h2><i class="fas fa-landmark"></i> ضريح ابن النفيس</h2>
-                    <p>
-                        يقع ضريح ابن النفيس في مدينة الرحمانية بمحافظة البحيرة، ملاصقًا لمسجد يحمل نفس الاسم. 
-                        تم اكتشاف الضريح رسميًا عام 1988 من خلال لوحة رخامية تحدد تاريخ إنشائه، 
-                        ويُنسب الضريح إلى الطبيب والعالِم الإسلامي الكبير "ابن النفيس" مكتشف الدورة الدموية الصغرى.
-                    </p>
+    <main class="englishMAIN">
+
+        <div class="page-wrapper">
+            <main class="content">
+                <div class="opera-frame">
+                    <img src="../imgs/dareh-ebn-el-nafis.jpg" class="opera-image">
                 </div>
 
-                <div class="detail-card">
-                    <h2><i class="fas fa-history"></i> التاريخ والنشأة</h2>
-                    <p>
-                        يعود إنشاء القبة والضريح إلى عام 1297هـ / 1879م على يد <strong>محمد أغا محمود</strong>.  
-                        بُنِي الضريح على مساحة 3.75 متر، بسُمك جدران يصل إلى 80 سم، 
-                        ويتوسطه مقصورة خشبية بطول 2.94 متر تحتوي على المقبرة التي يعود تاريخها إلى نهاية القرن الثالث عشر الهجري.
-                        يُعد هذا الضريح واحدًا من أهم المزارات التاريخية لكونه مدفنًا لعميد أطباء العالم.
-                    </p>
+                <h1 class="h11">Ibn al-Nafis's Mausoleum</h1>
+                <h1 class="h11" style="font-size: 18px;color: #494949;">ضريح ابن النفيس</h1>
+                <section class="details">
+
+                    <div class="detail-card">
+                        <h2><i class="fas fa-landmark"></i> Ibn al-Nafis's Mausoleum</h2>
+                        <p>
+                            Ibn al-Nafis's Mausoleum is located in Al-Rahmaniyah city, Beheira Governorate, adjacent to a mosque of the same name.
+                            The shrine was officially discovered in 1988 through a marble plaque that identifies its construction date.
+                            The mausoleum is attributed to the great Muslim physician and scholar "Ibn al-Nafis," the discoverer of the lesser circulatory system.
+                        </p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2><i class="fas fa-history"></i> History and Establishment</h2>
+                        <p>
+                            The dome and the mausoleum were established in 1297 AH / 1879 CE by <strong>Muhammad Agha Mahmoud</strong>.
+                            The shrine was built on an area of 3.75 meters, with wall thickness reaching 80 cm.
+                            In its center is a wooden enclosure, 2.94 meters long, containing the tomb which dates back to the end of the 13th Hijri century.
+                            This mausoleum is considered one of the most important historical pilgrimage sites, being the burial place of the Dean of Physicians of the World.
+                        </p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2><i class="fas fa-map-marked-alt"></i> Scientific Importance</h2>
+                        <p>
+                            The mausoleum is located 22 km from Damanhour city, and serves as a shrine for one of the most prominent medical scholars whose works are taught
+                            in international universities such as Oxford and Cambridge.
+                            Ibn al-Nafis was famous for discovering the lesser circulatory system and developing the science of anatomy.
+                            He was also the Dean of Physicians in his time and left a scientific legacy that influenced the medical renaissance worldwide.
+                        </p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2><i class="fas fa-mosque"></i> Location and Tourism</h2>
+                        <p>
+                            Despite the official registration of the shrine and mosque as Islamic monuments, the area suffers from a lack of tourist attention
+                            due to inadequate services, hotels, and proper access routes for delegations.
+                            The Al-Rahmaniyah vicinity includes a number of mausoleums of Tabi'in (successors) and philosophers.
+                            The city also witnessed prominent historical events, such as the <strong>Battle of Al-Rahmaniyah against the French Campaign</strong>.
+                            The local residents believe that the site is qualified to be an important cultural and tourist destination if highlighted more.
+                        </p>
+                    </div>
+
+                </section>
+                <section class="details pc">
+                    <div style="width: 100%;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416.170978082757!2d30.645756624947516!3d31.104979567548245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f65bd6d0f5c173%3A0x67cdc88744985849!2z2YXYs9is2K8g2Ygg2LbYsdmK2K0g2LPZitiv2Yog2LnZhNmKINio2YYg2KfZhNmG2YHZitiz!5e0!3m2!1sar!2seg!4v1765463830974!5m2!1sar!2seg"
+                            width="100%" 
+                            height="450" 
+                            style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </section>
+
+                <div class="back-section">
+                    <a href="../index.html#dareh-ebn-el-nafis" class="back-btn">
+                        <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                    </a>
+                </div>
+            </main>
+        </div>
+
+    </main>
+    
+
+    <main class="arabicMAIN">
+
+        <div class="page-wrapper">
+            <main class="content">
+                <div class="opera-frame">
+                    <img src="../imgs/dareh-ebn-el-nafis.jpg" class="opera-image">
                 </div>
 
-                <div class="detail-card">
-                    <h2><i class="fas fa-map-marked-alt"></i> الأهمية العلمية</h2>
-                    <p>
-                        يوجد الضريح على بُعد 22 كم من مدينة دمنهور، ويُعد مزارًا لواحد من أبرز علماء الطب الذين تُدرَّس مؤلفاتهم 
-                        في جامعات عالمية مثل أكسفورد وكامبردج.  
-                        اشتهر ابن النفيس باكتشاف الدورة الدموية الصغرى وتطوير علم التشريح، 
-                        كما كان عميدًا للأطباء في زمانه وترك إرثًا علميًا أثر في النهضة الطبية في العالم.
-                    </p>
+                <h1 class="h11">ضريح ابن النفيس</h1>
+                <h1 class="h11" style="font-size: 18px;color: #494949;">Ibn al-Nafis's Mausoleum</h1>
+                <section class="details">
+
+                    <div class="detail-card">
+                        <h2><i class="fas fa-landmark"></i> ضريح ابن النفيس</h2>
+                        <p>
+                            يقع ضريح ابن النفيس في مدينة الرحمانية بمحافظة البحيرة، ملاصقًا لمسجد يحمل نفس الاسم. 
+                            تم اكتشاف الضريح رسميًا عام 1988 من خلال لوحة رخامية تحدد تاريخ إنشائه، 
+                            ويُنسب الضريح إلى الطبيب والعالِم الإسلامي الكبير "ابن النفيس" مكتشف الدورة الدموية الصغرى.
+                        </p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2><i class="fas fa-history"></i> التاريخ والنشأة</h2>
+                        <p>
+                            يعود إنشاء القبة والضريح إلى عام 1297هـ / 1879م على يد <strong>محمد أغا محمود</strong>.  
+                            بُنِي الضريح على مساحة 3.75 متر، بسُمك جدران يصل إلى 80 سم، 
+                            ويتوسطه مقصورة خشبية بطول 2.94 متر تحتوي على المقبرة التي يعود تاريخها إلى نهاية القرن الثالث عشر الهجري.
+                            يُعد هذا الضريح واحدًا من أهم المزارات التاريخية لكونه مدفنًا لعميد أطباء العالم.
+                        </p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2><i class="fas fa-map-marked-alt"></i> الأهمية العلمية</h2>
+                        <p>
+                            يوجد الضريح على بُعد 22 كم من مدينة دمنهور، ويُعد مزارًا لواحد من أبرز علماء الطب الذين تُدرَّس مؤلفاتهم 
+                            في جامعات عالمية مثل أكسفورد وكامبردج.  
+                            اشتهر ابن النفيس باكتشاف الدورة الدموية الصغرى وتطوير علم التشريح، 
+                            كما كان عميدًا للأطباء في زمانه وترك إرثًا علميًا أثر في النهضة الطبية في العالم.
+                        </p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2><i class="fas fa-mosque"></i> المكان والسياحة</h2>
+                        <p>
+                            رغم تسجيل الضريح والمسجد كآثار إسلامية رسمية، إلا أن المنطقة تعاني من ضعف الاهتمام السياحي 
+                            بسبب نقص الخدمات والفنادق وممرات الوصول المناسبة للوفود.  
+                            ويضم محيط الرحمانية عددًا من أضرحة التابعين والفلاسفة، 
+                            كما شهدت المدينة أحداثًا تاريخية بارزة مثل <strong>معركة الرحمانية ضد الحملة الفرنسية</strong>.
+                            يرى الأهالي أن المكان مؤهل ليكون مقصدًا ثقافيًا وسياحيًا مهمًا إذا تم تسليط الضوء عليه بشكل أكبر.
+                        </p>
+                    </div>
+
+                </section>
+                <section class="details pc">
+                    <div style="width: 100%;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416.170978082757!2d30.645756624947516!3d31.104979567548245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f65bd6d0f5c173%3A0x67cdc88744985849!2z2YXYs9is2K8g2Ygg2LbYsdmK2K0g2LPZitiv2Yog2LnZhNmKINio2YYg2KfZhNmG2YHZitiz!5e0!3m2!1sar!2seg!4v1765463830974!5m2!1sar!2seg"
+                            width="100%" 
+                            height="450" 
+                            style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </section>
+
+                <div class="back-section">
+                    <a href="../index.html#dareh-ebn-el-nafis" class="back-btn">
+                        <i class="fas fa-arrow-right"></i> العودة إلى الجولة الرئيسية
+                    </a>
                 </div>
+            </main>
+        </div>
 
-                <div class="detail-card">
-                    <h2><i class="fas fa-mosque"></i> المكان والسياحة</h2>
-                    <p>
-                        رغم تسجيل الضريح والمسجد كآثار إسلامية رسمية، إلا أن المنطقة تعاني من ضعف الاهتمام السياحي 
-                        بسبب نقص الخدمات والفنادق وممرات الوصول المناسبة للوفود.  
-                        ويضم محيط الرحمانية عددًا من أضرحة التابعين والفلاسفة، 
-                        كما شهدت المدينة أحداثًا تاريخية بارزة مثل <strong>معركة الرحمانية ضد الحملة الفرنسية</strong>.
-                        يرى الأهالي أن المكان مؤهل ليكون مقصدًا ثقافيًا وسياحيًا مهمًا إذا تم تسليط الضوء عليه بشكل أكبر.
-                    </p>
-                </div>
+    </main>
 
-            </section>
-<section class="details pc">
-    <div style="width: 100%;">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416.170978082757!2d30.645756624947516!3d31.104979567548245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f65bd6d0f5c173%3A0x67cdc88744985849!2z2YXYs9is2K8g2Ygg2LbYsdmK2K0g2LPZitiv2Yog2LnZhNmKINio2YYg2KfZhNmG2YHZitiz!5e0!3m2!1sar!2seg!4v1765463830974!5m2!1sar!2seg"
-            width="100%" 
-            height="450" 
-            style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-</section>
 
-            <div class="back-section">
-                <a href="../index.html#dareh-ebn-el-nafis" class="back-btn">
-                    <i class="fas fa-arrow-right"></i> العودة إلى الجولة الرئيسية
-                </a>
-            </div>
-        </main>
-    </div>
+    <script src="../script/nav-ish.js"></script>
 
 </body>
 </html>

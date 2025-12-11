@@ -16,7 +16,92 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+
+        <link rel="stylesheet" href="../css/headerCss.css">
+        <link rel="stylesheet" href="../css/navCss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <div style="display: flex; gap: 20px;align-items: center; z-index: 11111;">
+            <input style="position: fixed;top: 20px;left: 20px;z-index: 11111;background-color: #00a624;" type="checkbox" class="theme-toggle pc" id="themeToggle">
+            
+            <div style="z-index: 111111;left: 3rem;" class="setting-tab" id="setting-tab">
+                <h3>اللغة</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="arabic" onclick="addarabic()">اللغة العربية</button>
+                    <button class="english" onclick="addenglish()">english</button>
+                </div>
+                
+                <h3>الالوان</h3>
+                <div style="display: flex;gap: 17px;justify-content: space-around;">
+                    <button class="light">light</button>
+                    <button class="dark">dark</button>
+                </div>
+            </div>
+        </div>
+
+    <div class="page-wrapper englishMAIN">
+        <main class="content">
+            <div class="opera-frame">
+                <img src="../imgs/abo-abdellah.jpeg" class="opera-image">
+            </div>
+
+            <h1 class="h11">Abu Abdullah Al-Maghribi Mosque</h1>
+            <h1 class="h11" style="font-size: 18px;color: #494949;">مسجد ابو عبدالله المغربي</h1>
+            <section class="details">
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-mosque"></i> Abu Abdullah Al-Maghribi Mosque</h2>
+                    <p>
+                        Abu Abdullah Al-Maghribi Mosque is located in Damanhour city, on Abu Abdullah Street in the Tamous area, and is known as an oasis for remembrance (Dhikr) and the Quran in Beheira Governorate.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-history"></i> History and Establishment</h2>
+                    <p>
+                        The mosque is considered an important spiritual center in the governorate, where worshippers gather to recite the Holy Quran and attend the noble Prophetic remembrance (Dhikr) circles.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-map-marked-alt"></i> Location</h2>
+                    <p>
+                        The mosque is specifically located on Abu Abdullah Street in the Tamous area of Damanhour city. It is characterized by its easy accessibility and its role as a gathering point for religious activities.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h2><i class="fas fa-users"></i> Religious Activities</h2>
+                    <p>
+                        The mosque hosts Quran recitation groups (Maqari'), and noble Prophetic remembrance (Dhikr) circles, which attract a large number of worshippers, making it an important spiritual and educational center in the region.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="details pc">
+                <div style="width: 100%;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9668.64208251464!2d30.484789705762388!3d31.043486072744013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f66bfb611b71e3%3A0xeb7283af7644f787!2z2YXYs9is2K8g2KfYqNmIINi52KjYryDYp9mE2YTZhyBhYnUgYWJkYWxsYWggbW9zcXVl!5e0!3m2!1sar!2seg!4v1765465648110!5m2!1sar!2seg"
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+
+            <div class="back-section">
+                <a href="../index.html#abo-abdellah" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> Back to the Main Tour
+                </a>
+            </div>
+        </main>
+    </div>
+    <div class="page-wrapper arabicMAIN">
         <main class="content">
             <div class="opera-frame">
                 <img src="../imgs/abo-abdellah.jpeg" class="opera-image">
@@ -94,6 +179,7 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9668.64208251464!2d30
             </div>
         </main>
     </div>
+            <script src="../script/nav-ish.js"></script>
 
 </body>
 </html>
