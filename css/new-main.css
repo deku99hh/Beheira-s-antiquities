@@ -21,7 +21,7 @@ main{
     background-color: #f5f7fa;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     main {
         padding-top: 70px;
     }
@@ -316,7 +316,7 @@ body{
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     main {
         padding-top: 70px;
     }
@@ -411,7 +411,7 @@ body{
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     #me,#khrashikhrashiTheMan {
         width: 0%;
         top: 28%;
