@@ -103,13 +103,14 @@
     └── zaglol.html
 ```
 ## Screenshots
-* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots1.png)
-* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots2.png)
-* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots3.png)
-* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots4.png)
-* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots5.png)
-* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots6.png)
-* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots7.png)
+* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots01.png)
+* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots02.png)
+* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots03.png)
+* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots04.png)
+* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots05.png)
+* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots06.png)
+* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots07.png)
+* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/boster.png)
 
 
 
