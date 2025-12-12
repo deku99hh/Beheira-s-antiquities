@@ -9,6 +9,10 @@ addEventListener('DOMContentLoaded',()=>{
   body.classList.add('arabic');
 
 
+  body.classList.remove('dark', 'light');
+  body.classList.add('light');
+
+
   // arabicBTN.addEventListener('click', () => {
   //   body.classList.remove('arabic', 'english');
   //   body.classList.add('arabic');
@@ -26,4 +30,13 @@ function addarabic(){
 function addenglish(){
   body.classList.remove('arabic', 'english');
   body.classList.add('english');
+}
+
+function addlight(){
+  body.classList.remove('dark', 'light');
+  body.classList.add('light');
+}
+function adddark(){
+  body.classList.remove('dark', 'light');
+  body.classList.add('dark');
 }

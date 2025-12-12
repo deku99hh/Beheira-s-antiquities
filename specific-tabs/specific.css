@@ -4,23 +4,38 @@
     box-sizing: border-box;
 }
 
+.light{
+    --lightbg:#f5f7fa;
+    --fontColor: black;
+    --bgWood:#f3f3f3;
+    --bgStone:#f8f8f8;
+
+}
+.dark{
+    --lightbg:#1b1b1b;
+    --fontColor: #ffffff;
+    --bgWood:#2b2b2b;
+    --bgStone:#383838;
+}
+
 :root {
     --primary-color: #206330;
     --secondary-color: #3c8c4f;
     --accent-color: #3a844b;
-    --text-color: #333;
+    
     --light-bg: #f5f5f5;
-    --dark-bg: #111;
-    --white: #fff;
     --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 body {
     font-family: 'Cairo', sans-serif;
-    background-color: #f8f5f0;
-    color: var(--text-color);
+    background-color: var(--lightbg);
+    color: var(--fontColor);
     line-height: 1.8;
     background-image: url('https://w0.peakpx.com/wallpaper/399/938/HD-wallpaper-video-game-garry-s-mod-texture-minimalist-thumbnail.jpghttps://static.vecteezy.com/system/resources/thumbnails/022/466/674/small/black-and-white-atmospheric-concrete-wall-texture-photo.jpg');
+}
+main{
+    background-color: var(--lightbg) !important;
 }
 
 
@@ -93,7 +108,7 @@ grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .detail-card {
-    background: white;
+    background: var(--bgStone);
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 
@@ -130,7 +145,7 @@ grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     display: flex;
     align-items: center;
     gap: 12px;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 2px solid var(--lightbg);
     padding-bottom: 0.8rem;
 }
 
