@@ -23,85 +23,105 @@
 * **CSS** 
 * **JavaScript** 
 
+## 🚀 خطة التطوير المستقبلية (Future Scope)
+
+* التحول إلى استخدام مكتبات/أطر عمل (مثل React أو Vue.js) لتحسين بنية الكود.
+
 ## هيكلة المشروع
 
 يتكون المشروع من الهيكل التنظيمي التالي للملفات:
 
 ```text
-/
-/
-├── index.html                  # الصفحة الرئيسية للموقع
-├── css/                        # مجلد ملفات التنسيق
-│   ├── footerCss.css           
-│   ├── headerCss.css           
-│   ├── hero.css                
-│   ├── main.css                
-│   ├── mobile.css          
-│   └── navCss.css              
-├── imgs/                       # مكتبة الصور
-│   ├── abkain.jpeg
-│   ├── abo-abdellah.jpeg
-│   ├── abo-magd.jpg
-│   ├── arab-kaly.jpg
-│   ├── baramos.png
-│   ├── bawaba-reesh.jpg
-│   ├── beshara-church.jpg
-│   ├── canob.jpg
-│   ├── dareh-ebn-el-nafis.jpg
-│   ├── defsho.png
-│   ├── der-serian.jpg
-│   ├── edfena.jpeg
-│   ├── elbehera.png
-│   ├── eyelife.jpg
-│   ├── Frame1.png
-│   ├── Frame2.png
-│   ├── Frame3.png
-│   ├── khrashi.png
-│   ├── lion.jpg
-│   ├── malaha.jpg
-│   ├── mikhaiel.jpg
-│   ├── opera-damanhur.jpg
-│   ├── qanater.jpg
-│   ├── rashid-stone.JPG
-│   ├── rooms.png
-│   ├── sidi-omar.jpg
-│   ├── tahona.jpg
-│   ├── toba.jpeg
-│   ├── Wadi-El-Natrun.JPG
-│   ├── zaglol1.webp
-│   └── zaglol2.jpg
-├── script/                     # ملفات الجافاسكريبت
-│   └── goUpButton.js
-└── specific-tabs/              # الصفحات الفرعية للمعالم
-    ├── specific.css            # ملف التنسيق الخاص بالصفحات الفرعية
-    ├── abkain.html
-    ├── abo-abdellah.html
-    ├── abo-magd.html
-    ├── arab-kaly.html
-    ├── baramos.html
-    ├── bawaba-reesh.html
-    ├── beshara-church.html
-    ├── canob.html
-    ├── dareh-ebn-el-nafis.html
-    ├── defsho.html
-    ├── der-serian.html
-    ├── edfena.html
-    ├── eyelife.html
-    ├── khrashi.html
-    ├── lion.html
-    ├── malaha.html
-    ├── mikhaiel.html
-    ├── opera-damanhur.html
-    ├── qanater.html
-    ├── rashid-stone.html
-    ├── rooms.html
-    ├── sidi-omar.html
-    ├── tahona.html
-    ├── temp.html
-    ├── toba.html
-    ├── Wadi-El-Natrun.html
-    └── zaglol.html
-```
+
+
+├── index.html                                     # الصفحة الرئيسية
+|
+├── bootstrap/                                     # مجلد Bootstrap
+|
+├── css/                                           # ملفات التنسيق الرئيسية
+│   ├── footerCss.css
+│   ├── headerCss.css
+│   ├── hero.css
+│   ├── main.css
+│   ├── mobile.css
+│   ├── navCss.css
+│   └── new-main.css
+├── imgs/                                          # مكتبة الصور
+│   ├── Screenshots/                               # مجلد لقطات الشاشة
+|
+│   ├── abdullah.jpg
+│   ├── abkain.jpeg
+│   ├── abo-abdellah.jpeg
+│   ├── abo-magd.jpg
+│   ├── arab-kaly.jpg
+│   ├── baramos.png
+│   ├── bawaba-reesh.jpg
+│   ├── Beheira map.png
+│   ├── beshara-church.jpg
+│   ├── canob.jpg
+│   ├── dareh-ebn-el-nafis.jpg
+│   ├── defsho.png
+│   ├── der-serian.jpg
+│   ├── edfena.jpeg
+│   ├── elbehera.png
+│   ├── eyelife.jpg
+│   ├── Frame1.png
+│   ├── Frame2.png
+│   ├── Frame3.png
+│   ├── khrashi.png
+│   ├── khrashikhrashiTheMan.jpg
+│   ├── lion.jpg
+│   ├── malaha.jpg
+│   ├── me.jpeg
+│   ├── mikhaiel.jpg
+│   ├── opera-damanhur.jpg
+│   ├── qanater.jpg
+│   ├── rashid-stone.JPG
+│   ├── rooms.png
+│   ├── sidi-omar.jpg
+│   ├── tahona.jpg
+│   ├── theGang.png
+│   ├── toba.jpeg
+│   ├── Wadi-El-Natrun.JPG
+│   ├── zaglol1.webp
+│   └── zaglol2.jpg
+├── script/                                         # ملفات الجافاسكريبت
+│   ├── goUpButton.js
+│   └── nav-ish.js
+└── specific-tabs/                                  # الصفحات الفرعية للمعالم
+    ├── abkain.html
+    ├── abo-abdellah.html
+    ├── abo-magd.html
+    ├── specific.css                                # ملف التنسيق المخصص
+    ├── arab-kaly.html
+    ├── baramos.html
+    ├── bawaba-reesh.html
+    ├── beshara-church.html
+    ├── canob.html
+    ├── dareh-ebn-el-nafis.html
+    ├── defsho.html
+    ├── der-serian.html
+    ├── edfena.html
+    ├── eyelife.html
+    ├── khrashi.html
+    ├── lion.html
+    ├── malaha.html
+    ├── mikhaiel.html
+    ├── opera-damanhur.html
+    ├── qanater.html
+    ├── rashid-stone.html
+    ├── rooms.html
+    ├── sidi-omar.html
+    ├── tahona.html
+    ├── temp.html
+    ├── toba.html
+    ├── togel.html                                 
+    ├── Wadi-El-Natrun.html
+    └── zaglol.html
+
+ ```
+
+
 ## Screenshots
 * ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots01.png)
 * ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots02.png)
