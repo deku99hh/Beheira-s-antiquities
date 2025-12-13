@@ -110,7 +110,11 @@
 * ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots05.png)
 * ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots06.png)
 * ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots07.png)
-* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/boster.png)
+* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots08.png)
+* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots09.png)
+* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots010.png)
+* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/Screenshots011.png)
+* ![alt text](https://github.com/deku99hh/Beheira-s-antiquities/blob/main/imgs/Screenshots/booster.jpg)
 
 
 
