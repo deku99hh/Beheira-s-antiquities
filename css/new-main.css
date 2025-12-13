@@ -15,14 +15,11 @@ main h2,main p{
     color: var(--fontColor);
 }
 .stone-bg{
-    /* --bgImg: url('https://img.freepik.com/free-photo/abstract-white-surface-with-clight-pores_1194-7514.jpg?semt=ais_hybrid&w=740&q=80'); */
     background-color: var(--bgStone) !important;
 }
 .wood-bg{
-    --bgImg: url('https://png.pngtree.com/thumb_back/fh260/background/20210826/pngtree-wood-texture-white-wood-texture-background-image_769768.jpg');
     background-color: var(--bgWood) !important;
 }
-
 
 /* all */
 *{
@@ -42,7 +39,6 @@ a{
 /* main */
 main{
     padding-top: 80px;
-    /* padding-bottom: 800px; */
 
     background-color: #f5f7fa;
 }
@@ -63,49 +59,16 @@ main{
         margin-top: 20px;
     }
 
-    .frame img {
-        /* width: 92% !important; */
-    }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* :root{
-    --bgImg: url('https://w0.peakpx.com/wallpaper/399/938/HD-wallpaper-video-game-garry-s-mod-texture-minimalist-thumbnail.jpg')
-} */
 
 
 
 /* الحيطة */
 .wall {
-    /* break-inside: avoid-column; */
-    /* break-inside: avoid; */
     width: 100%;
     padding: 80px 0;
-    /* background-image: var(--bgImg); */
     background-position: center;
     column-width: 23rem;
-    /* display: grid; */
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     justify-items: center;
@@ -164,13 +127,6 @@ main{
     text-align: center;
 }
 
-
-
-
-
-
-
-
 .artifact-date {
     font-family: "Cairo", sans-serif;
     font-size: 1rem;
@@ -181,14 +137,6 @@ main{
     .artifact {
         flex-direction: column;
         text-align: center;
-    }
-
-    .artifact-info {
-        /* width: 90%; */
-    }
-
-    .frame {
-        /* width: 80%; */
     }
 
     .frame::before {
@@ -202,7 +150,6 @@ main{
 }
 
 .frame:hover {
-    /* transform: scale(1.1); */
     filter: drop-shadow(0 0 20px rgba(0,0,0,0.4));
 }
 
@@ -213,16 +160,6 @@ main{
 .frame:hover::before {
     transform: scale(1.05);
 }
-
-
-
-
-
-
-
-
-
-
 
 .date-but {
     display: flex;
@@ -244,7 +181,6 @@ main{
     font-size: 12px;
     font-weight: 800;
     cursor: pointer;
-    /* margin-top: 20px; */
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -283,32 +219,6 @@ main{
     transform: translateX(100%);
 }
 
-
-
-
-
-/* :root{
-    --imgPreviewimg: url(../imgs/opera-damanhur.jpg);
-    --imgPreview:none;
-}
-body{
-    overflow-x: hidden;
-}
-
-.imgPreview {
-    position: fixed;
-    display: var(--imgPreview);
-    top: 17%;
-    text-align: center;
-    right: 8%;
-    width: 80%;
-    height: 80%;
-    background-image: var(--imgPreviewimg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 99;
-} */
-
 .opera-damanhur-butt{
     background-color: rgba(0, 0, 0, 0);
     border: 0;
@@ -319,11 +229,6 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
-
-/* body:has(.opera-damanhur-butt:focus){
-    --imgPreview: block;
-} */
-
 
 .wall::before {
     content: '';
@@ -358,10 +263,6 @@ body{
         margin-top: 20px;
     }
 
-    .frame img {
-        /* width: 100% !important; */
-    }
-
     .wall {
         grid-template-columns: 1fr; 
     }
@@ -371,37 +272,7 @@ body{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .goUpButt button {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-}
-.goUpButt {
-    position: sticky;
-    top: 70vw;
-    left: 3vw;
-    border-radius: 50%;
-}
-body{
-    padding-bottom: 3000px  ;
-} */
-
 #me,#khrashikhrashiTheMan {
-    /* display: none; */
     opacity: 0;
     width: 0%;
     border-radius: 20px;
@@ -418,7 +289,6 @@ body{
 @keyframes me {
     0% {
         width: 22%;
-        /* display: block; */
         opacity:0;
     }
     30% {
@@ -433,7 +303,6 @@ body{
     100% {
         opacity:0;
         width: 0%;
-        /* display: none; */
     }
 }
 
@@ -447,7 +316,6 @@ body{
     @keyframes me {
         0% {
             width: 62%;
-            /* display: block; */
             opacity:0;
         }
         30% {
@@ -462,7 +330,6 @@ body{
         100% {
             opacity:0;
             width: 0%;
-            /* display: none; */
         }
     }
 
@@ -478,13 +345,6 @@ body{
 }.english .arabicMAIN{
     display: none;
 }
-
-
-
-
-
-
-
 
 
 .about{
@@ -509,7 +369,6 @@ body{
 
 .about .artifact-desc{
     text-align: start;
-    /* min-width: 24rem; */
 }
 .artifact-info div{
     display: flex;
@@ -533,14 +392,8 @@ body{
 }
 
 .BEHERA {
-    /* break-inside: avoid-column; */
-    /* break-inside: avoid; */
-    /* width: 100%; */
     padding: 80px 0rem;
-    /* background-image: var(--bgImg); */
     background-position: center;
-    /* column-width: 23rem; */
-    /* display: grid; */
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     justify-items: center;

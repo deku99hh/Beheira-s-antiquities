@@ -93,5 +93,3 @@ function RashedTheMan(){
   },3000)
 
 };
-
-

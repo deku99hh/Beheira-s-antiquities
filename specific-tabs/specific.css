@@ -4,25 +4,26 @@
     box-sizing: border-box;
 }
 
-.light{
-    --lightbg:#f5f7fa;
+.light {
+    --lightbg: #f5f7fa;
     --fontColor: black;
-    --bgWood:#f3f3f3;
-    --bgStone:#f8f8f8;
-
+    --bgStone: #f8f8f8;
+    --smallTitle: #494949;
+    --text: #555;
+    --primary-color: #206330;
 }
-.dark{
-    --lightbg:#1b1b1b;
+
+.dark {
+    --lightbg: #1b1b1b;
     --fontColor: #ffffff;
-    --bgWood:#2b2b2b;
-    --bgStone:#383838;
+    --bgStone: #383838;
+    --smallTitle: #9f9f9f;
+    --text: #e1e1e1;
+    --primary-color: #3cdc61;
 }
 
 :root {
-    --primary-color: #206330;
     --secondary-color: #3c8c4f;
-    --accent-color: #3a844b;
-    
     --light-bg: #f5f5f5;
     --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -32,17 +33,34 @@ body {
     background-color: var(--lightbg);
     color: var(--fontColor);
     line-height: 1.8;
-    background-image: url('https://w0.peakpx.com/wallpaper/399/938/HD-wallpaper-video-game-garry-s-mod-texture-minimalist-thumbnail.jpghttps://static.vecteezy.com/system/resources/thumbnails/022/466/674/small/black-and-white-atmospheric-concrete-wall-texture-photo.jpg');
 }
-main{
+
+main {
     background-color: var(--lightbg) !important;
 }
 
+main::after {
+    position: fixed;
+    top: 0;
+    right: 50px;
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: #3a2400;
+    z-index: 0;
+}
 
-.subtitle {
-    font-size: 1.2rem;
-    opacity: 0.9;
-    color: #e0e0e0;
+.h11 {
+    text-align: center;
+    font-family: 'Amiri', serif;
+    font-size: 5vw;
+}
+
+.smallTitle {
+    font-size: 18px;
+    color: var(--smallTitle);
+    text-align: center;
+    font-family: 'Amiri', serif;
 }
 
 .opera-frame {
@@ -53,7 +71,9 @@ main{
     border-radius: 8px;
     transform-style: preserve-3d;
     perspective: 1000px;
-}.opera-frame img {
+}
+
+.opera-frame img {
     border-radius: 20px;
 }
 
@@ -72,36 +92,10 @@ main{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-.frame-label {
-    background: linear-gradient(to right, #8B4513, #A0522D);
-    color: #ffd700;
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Reem Kufi', sans-serif;
-    font-weight: bold;
-    font-size: 1.1rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    border: 2px solid #ffd700;
-    z-index: 10;
-    min-width: 300px;
-    justify-content: center;
-}
-
-.frame-label i {
-    font-size: 1.3rem;
-}
-
 .details {
     padding: 2rem 3rem;
     display: grid;
-grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 2rem;
     background: transparent;
     margin: 4rem 2rem 2rem;
@@ -115,7 +109,7 @@ grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         0 10px 20px rgba(0, 0, 0, 0.15),
         inset 0 0 0 1px rgba(139, 69, 19, 0.1);
     transition: all 0.4s ease;
-    border-top: 4px solid var(--accent-color);
+    border-top: 4px solid var(--primary-color);
     position: relative;
     overflow: hidden;
 }
@@ -150,86 +144,13 @@ grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .detail-card h2 i {
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .detail-card p {
-    color: #555;
+    color: var(--text);
     font-size: 1.05rem;
     line-height: 1.8;
-}
-
-.detail-card ul {
-    padding-right: 1.5rem;
-    margin-top: 1.2rem;
-}
-
-.detail-card li {
-    margin-bottom: 0.8rem;
-    position: relative;
-    padding-right: 1.5rem;
-    color: #555;
-}
-
-.detail-card li:before {
-    content: "▸";
-    color: var(--accent-color);
-    font-size: 1.2rem;
-    position: absolute;
-    right: 0;
-}
-
-.quote-box {
-    grid-column: 1 / -1;
-    background: linear-gradient(135deg, #206330, #43ba60);
-    color: white;
-    padding: 3rem;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 2rem;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid rgba(255, 215, 0, 0.3);
-}
-
-.quote-box:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,50 Q40,30 60,50 T100,50" stroke="rgba(255,215,0,0.1)" stroke-width="2" fill="none"/></svg>');
-    opacity: 0.3;
-}
-
-.quote {
-    font-family: 'Amiri', serif;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 1;
-    line-height: 1.6;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.quote-author {
-    font-style: italic;
-    opacity: 0.9;
-    position: relative;
-    z-index: 1;
-    font-size: 1.1rem;
-    color: #ffd700;
-}
-
-.quote-box i {
-    font-size: 3rem;
-    color: #ffd700;
-    margin-bottom: 1.5rem;
-    display: block;
-    position: relative;
-    z-index: 1;
-    opacity: 0.8;
 }
 
 .back-section {
@@ -268,29 +189,12 @@ grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     overflow: hidden;
 }
 
-
-
-
-
-
 .back-btn:hover {
     transform: translateY(-3px);
     box-shadow: 
         8px 8px 16px rgba(0, 0, 0, 0.25),
         -8px -8px 16px rgba(255, 255, 255, 0.15);
 }
-body{
-}
-.back-btn:hover::before {
-    transform: translateX(100%);
-}
-
-
-
-
-
-
-
 
 .back-btn i {
     font-size: 1.2rem;
@@ -301,24 +205,7 @@ body{
     transform: translateX(-5px);
 }
 
-.copyright {
-    grid-column: 1 / -1;
-    text-align: center;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 1rem;
-    font-size: 0.95rem;
-    opacity: 0.7;
-    color: #aaa;
-}
-.h11{
-    text-align: center;font-family: 'Amiri', serif;font-size: 5vw;
-}
-@media (max-width: 600px) {
-    .h11{
-        font-size: 12vw;
-    }   
-}
+
 @media (max-width: 992px) {
     main::after {
         display: none;
@@ -334,23 +221,12 @@ body{
         margin: 3rem 1.5rem 2rem;
         padding: 20px;
     }
-    
-    .quote {
-        font-size: 1.6rem;
-    }
 }
 
 @media (max-width: 768px) {
-        
     .opera-frame {
         margin: 2rem 1rem;
         padding: 15px;
-    }
-    
-    .frame-label {
-        min-width: 250px;
-        font-size: 1rem;
-        padding: 0.8rem 1.5rem;
     }
     
     .details {
@@ -363,43 +239,21 @@ body{
     .detail-card {
         padding: 1.5rem;
     }
-    
-    .quote {
-        font-size: 1.4rem;
-    }
+}
+
+@media (max-width: 600px) {
+    .h11 {
+        font-size: 12vw;
+    }   
 }
 
 @media (max-width: 480px) {
-
     .page-wrapper {
         border-radius: 0;
-    }
-        
-    .subtitle {
-        font-size: 1rem;
-    }
-    
-    .frame-label {
-        font-size: 0.9rem;
-        padding: 0.7rem 1.2rem;
-        min-width: 200px;
     }
     
     .back-btn {
         padding: 1rem 2rem;
         font-size: 1.1rem;
     }
-}
-
-
-main::after {
-    /* display: block; */
-    position: fixed;
-    top: 0;
-    right: 50px;
-    content: '';
-    width: 2px;
-    height: 100%;
-    background-color: #3a2400;
-    z-index: 0;
 }

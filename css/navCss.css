@@ -24,10 +24,6 @@ input[type="checkbox"]:checked ~ .mobileNav {
     transition: all 0.2s linear;
 }
 
-
-
-
-
 .mobileNav {
     overflow: scroll;
     height: 711px;
@@ -49,11 +45,6 @@ input[type="checkbox"]:checked ~ .mobileNav {
     font-weight: 500;
     text-decoration: none;
 }
-
-
-
-
-
 
 /* goUp */
 #scrollToTopBtn {

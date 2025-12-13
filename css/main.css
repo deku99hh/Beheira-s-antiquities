@@ -16,8 +16,6 @@ a{
 /* main */
 main{
     padding-top: 80px;
-    /* padding-bottom: 800px; */
-
     background-color: #f5f7fa;
 }
 
@@ -44,38 +42,10 @@ main{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-:root{
-    --bgImg: url('https://w0.peakpx.com/wallpaper/399/938/HD-wallpaper-video-game-garry-s-mod-texture-minimalist-thumbnail.jpg')
-}
-
-
-
 /* الحيطة */
 .wall {
     width: 100%;
     padding: 80px 0;
-    background-image: var(--bgImg);
-    /* background-size: cover; */
     background-position: center;
 }
 
@@ -89,11 +59,6 @@ main{
     direction: rtl;
     flex-direction: row;
     margin-bottom: 100px;
-}
-
-/* flip */
-.flipArtifact{
-    flex-direction:row-reverse;
 }
 
 /* البرواز */
@@ -119,7 +84,6 @@ main{
     content: "";
     position: absolute;
     inset: -18px;
-    /* background-image: url("../imgs/Frame1.png"); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     z-index: 1;
@@ -187,16 +151,6 @@ main{
     transform: scale(1.05);
 }
 
-
-
-
-
-
-
-
-
-
-
 .date-but {
     display: flex;
     justify-content: space-between;
@@ -216,7 +170,6 @@ main{
     font-size: 12px;
     font-weight: 800;
     cursor: pointer;
-    /* margin-top: 20px; */
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -256,31 +209,6 @@ main{
 }
 
 
-
-
-
-/* :root{
-    --imgPreviewimg: url(../imgs/opera-damanhur.jpg);
-    --imgPreview:none;
-}
-body{
-    overflow-x: hidden;
-}
-
-.imgPreview {
-    position: fixed;
-    display: var(--imgPreview);
-    top: 17%;
-    text-align: center;
-    right: 8%;
-    width: 80%;
-    height: 80%;
-    background-image: var(--imgPreviewimg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 99;
-} */
-
 .opera-damanhur-butt{
     background-color: rgba(0, 0, 0, 0);
     border: 0;
@@ -294,7 +222,6 @@ body{
 /* body:has(.opera-damanhur-butt:focus){
     --imgPreview: block;
 } */
-
 
 .wall::before {
     content: '';

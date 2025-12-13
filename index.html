@@ -60,8 +60,8 @@
     display: flex;
     justify-content: space-evenly;
 ">
-                                    <button class="light BUTTON">light</button>
-                                    <button class="dark BUTTON">dark</button>
+                                    <button class="light BUTTON" onclick="addlight()">light</button>
+                                    <button class="dark BUTTON" onclick="adddark()">dark</button>
                                 </div>
                             
 
@@ -142,6 +142,7 @@
                             تضم المحافظة عددًا ملحوظًا من المواقع الأثرية، منها أبو المتامر، وأبو حمص، ودمنهور، ورشيد، وكفر الدوار.
                             ومن بين الاكتشافات الأثرية التي عُثر عليها في كوم الجيزة وكوم الحمام في البحيرة، العملات المعدنية، والمصابيح، وعظام الحيوانات، والأواني الفخارية التي تعود إلى العصر الروماني وما تلاه من العصر الروماني الشرقي (البيزنطي).
                             <br>
+                            تأسيس "البحيرة" كمحافظة مصرية حديثة كان في 6 نوفمبر 1934، لكن المنطقة نفسها لها تاريخ أقدم، حيث كانت تعرف باسم "أعمال البحيرة" في العصر الفاطمي وضُمت إليها أراضٍ أخرى لاحقاً، لتصبح ولاية البحيرة في العصر العثماني، وهو الاسم الذي تطور لاحقاً إلى المحافظة المعروفة اليوم
     
                         </p>
     
@@ -173,6 +174,7 @@
                         تم ترميمها وافتتاحها لتكون مركزًا للفنون والعروض المسرحية، وتمتاز بطراز
                         معماري يجمع بين الحداثة والروح التراثية للمدينة.
                     </p>
+                    <!-- <img src="imgs/theGang.png"> -->
                     <div class="date-but">
                         <p class="artifact-date">التاريخ: 1930 – تم التجديد 2010</p>
                         <a href="specific-tabs/opera-damanhur.html"><button class="">المزيد-></button></a>
@@ -574,9 +576,10 @@
 
             <div class="artifact" id="lion">
                 
-                <div class="artifact-img frame">
+                <div class="artifact-img frame" style="overflow: hidden;height: 16rem;">
                     <button class="opera-damanhur-butt">
                         <img  loading="lazy" src="imgs/lion.jpg" alt="تمثال اسد دمنهور" style="width: 70%;">
+                        <img  loading="lazy" src="imgs/abdullah.jpg" style="position: absolute;top: -50px;scale: 0.7;/* height: 285px; */width: 251px;z-index: 0;">
                     </button>
                 </div>
 
@@ -778,7 +781,7 @@
     </main>
 
 
-                                                    <main class="englishMAIN" style="background-color: blue !important;">
+                                                    <main class="englishMAIN">
                                                             <section id="hero" class="hero">
                                                                 <div class="poem">
                                                                     <p class="heroP1">
@@ -793,8 +796,35 @@
                                                                     <img  loading="lazy" src="https://www.svgrepo.com/show/147978/down-black-arrow.svg" alt="دار اوبيرا دمنهور">
                                                                 </div>
                                                             </section>
+                                                            
+                                                            <section id="statue" class="BEHERA section wood-bg">
 
-                                                            <section id="building" class="wall" style="--bgImg: url('https://img.freepik.com/free-photo/abstract-white-surface-with-clight-pores_1194-7514.jpg?semt=ais_hybrid&w=740&q=80')">
+                                                                <div class="about">
+
+                                                                    <div class="artifact-info">
+                                                                        <h2 class="artifact-title">Beheira Governorate</h2>
+                                                                        <div>
+                                                                            <p class="artifact-desc">
+                                                                                Beheira Governorate enjoys an important strategic location, west of the Rashid branch of the Nile River.
+                                                                                <br>
+                                                                                Beheira consists of 13 districts (Marakiz) and 14 cities, and it contains important industries such as cotton, chemicals, carpets, electricity, and fishing.
+                                                                                <br>
+                                                                                The Governorate includes a notable number of archaeological sites, including Abu al-Matamir, Abu Hummus, Damanhour, Rosetta (Rashid), and Kafr El Dawwar.
+                                                                                Among the archaeological discoveries found in Kom El Gizah and Kom El Hammam in Beheira are coins, lamps, animal bones, and pottery dating back to the Roman Era and the subsequent Eastern Roman (Byzantine) Era.
+                                                                                <br>
+                                                                                The establishment of "Beheira" as a modern Egyptian governorate was on November 6, 1934, but the area itself has an older history, as it was known as "Amal Al Buhayra" (The Works of the Lake) during the Fatimid Era, and other lands were later annexed to it, becoming the Wilaya (Province) of Beheira in the Ottoman Era, a name that later evolved into the Governorate known today.
+                                                                            </p>
+
+                                                                            <img src="imgs/Behiera map.png" height="280px">
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </section>
+
+                                                            <section id="building" class="wall stone-bg">
                                                             
                                                                 <div class="artifact" id="opera-damanhur">
                                                                     
@@ -1184,7 +1214,7 @@
 
                                                             </section>
 
-                                                            <section id="statue" class="wall section wood-bg" style="--bgImg: url('https://png.pngtree.com/thumb_back/fh260/background/20210826/pngtree-wood-texture-white-wood-texture-background-image_769768.jpg')">
+                                                            <section id="statue" class="wall section wood-bg">
 
                                                                 <div class="artifact" id="lion">
                                                                     
@@ -1251,7 +1281,7 @@
 
                                                             </section>
 
-                                                            <section id="place" class=" wall section stone-bg" style="--bgImg: url('https://img.freepik.com/free-photo/abstract-white-surface-with-clight-pores_1194-7514.jpg?semt=ais_hybrid&w=740&q=80')">
+                                                            <section id="place" class=" wall section stone-bg">
 
                                                                 <div class="artifact" id="qanater">
                                                                     
