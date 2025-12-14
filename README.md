@@ -17,11 +17,15 @@
 
 ## التقنيات المستخدمة
 
-تم بناء المشروع باستخدام تقنيات الويب الأساسية لضمان الأداء السريع والتوافقية العالية:
+تم بناء المشروع باستخدام تقنيات الويب القياسية لضمان الأداء السريع والتوافقية العالية:
 
-* **HTML5** 
-* **CSS** 
-* **JavaScript** 
+<div align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=github&logoColor=white" />
+</div>
+
 
 ## 🚀 خطة التطوير المستقبلية (Future Scope)
 
@@ -139,15 +143,23 @@
 
 
 
+## التشغيل محلياً (Installation)
+
+1.  **استنسخ المستودع (Clone):**
+    ```bash
+    git clone [https://github.com/deku99hh/Beheira-s-antiquities.git](https://github.com/deku99hh/Beheira-s-antiquities.git)
+    ```
 
 
 
 ## فريق العمل
 تم تطوير هذا المشروع بواسطة:
 
-* Abdelrahman Hassan Rashed
+**Abdelrahman Hassan Rashed** <br>
+Lead Developer & Logic , front end (UI/UX) ,team leader ,head programmer , جمع وتنسيق وكتابة المعلومات الهيكلة والبناء الاساسي للمشروع وكتابت الكود وانشاء البوستر. <br>
+**Mohamed Hisham Abu El\_Makarem** <br>
+تصميم الواجه الاولية
 
-* Mohamed Hisham Abu El_Makarem
 
 ## المصادر
 
@@ -158,3 +170,7 @@
 * elwatannews
 * بعض الكتب في منازل الاعضاء
 
+<div align="center">
+  <p>كل الحقوق محفوظة لفريق WEBTRIO</p>
+  <p>صُنِع بكل حب لأجل البحيرة ❤️ </p>
+</div>
